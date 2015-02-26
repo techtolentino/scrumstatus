@@ -1,7 +1,12 @@
 // User Registration Controller
-myApp.controller('RegistrationController', function($scope){
+myApp.controller('RegistrationController', function($scope, $location){
+
 	$scope.login = function(){
-		alert($scope.user.email);
-	}
+		$location.path('/team');
+	} //login
+
+	$scope.register = function(){
+		$location.path('/team');
+	} //register
 
 });
