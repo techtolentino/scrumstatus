@@ -5,7 +5,8 @@ var appControllers = angular.module('appControllers',[]);
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
 		when('/login', {
-			templateUrl: 'views/login.html'
+			templateUrl: 'views/login.html',
+			controller: 'RegistrationController'
 		}).
 		when('/team', {
 			templateUrl: 'views/team.html'
@@ -14,7 +15,8 @@ myApp.config(['$routeProvider', function($routeProvider){
 			templateUrl: 'views/about.html'
 		}).
 		when('/register', {
-			templateUrl: 'views/register.html'
+			templateUrl: 'views/register.html',
+			controller: 'RegistrationController'
 		}).
 		otherwise({
 			redirectTo: '/login'
