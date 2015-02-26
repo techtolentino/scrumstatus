@@ -30,3 +30,7 @@ a {text-decoration: none;}
 	margin: 20px 20px 20px 20px;
 }
 
+.brand a {
+	color: white;
+}
+
