@@ -1,6 +1,8 @@
-var myApp = angular.module('myApp', ['ngRoute', 'appControllers']);
+var myApp = angular.module('myApp', 
+	['ngRoute', 'firebase', 'appControllers']);
 
-var appControllers = angular.module('appControllers',[]);
+// Dependencies
+var appControllers = angular.module('appControllers',['firebase']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
@@ -9,7 +11,8 @@ myApp.config(['$routeProvider', function($routeProvider){
 			controller: 'RegistrationController'
 		}).
 		when('/team', {
-			templateUrl: 'views/team.html'
+			templateUrl: 'views/team.html',
+			controller: 'MembersController'
 		}).
 		when('/about', {
 			templateUrl: 'views/about.html'
