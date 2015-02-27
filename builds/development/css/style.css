@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
+	background: #2b2b2b;
 }
 
 main {
@@ -19,7 +20,7 @@ a:hover {color: #fee652;}
 
 .nav {
 	width: 100%;
-	background: #1b2b25;
+	background: #2b2b2b;
 	margin: 0 auto;
 }
 
@@ -38,46 +39,51 @@ a:hover {color: #fee652;}
 	color: white;
 }
 
-/* Status Classes */
+#teamTitle {
+	color: #f1f1f1;
+}
 
+/* Status Classes */
 .green {
-	background-image: url(../images/green.png);
+	background: #2ecc71;
 }
 .grellow {
-	background-image: url(../images/grellow.png);
+	background: #b9e93b;
 }
 .yellow {
-	background-image: url(../images/yellow.png);
+	background: #f1c40f;
 }
 .orange {
-	background-image: url(../images/orange.png);
+	background: #f39c12;
 }
 .red {
-	background-image: url(../images/red.png);
+	background: #e74c3c;
 }
 .darkred {
-	background-image: url(../images/darkred.png);
+	background: #c0392b;
 }
 
 
 /* Full width responsive grid */
 .cbp-rfgrid {
-	margin: 35px 0 0 0;
 	padding: 0;
 	list-style: none;
 	position: relative;
-	width: 100%;
+	width: 90%;
+	margin-left: 5%;
 }
+
 
 .cbp-rfgrid li {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	width: 16.6666667%; /* Fallback */
-	width: -webkit-calc(100% / 6);
-	width: calc(100% / 6);
+	width: 19%; /* Fallback */
+	width: -webkit-calc(100% / 5.2561);
+	width: calc(100% / 5.2561);
 	text-align: center;
-	height: 200px;
+	height: 250px;
+	margin: 2px;
 }
 
 .cbp-rfgrid li img {
@@ -106,17 +112,17 @@ a:hover {color: #fee652;}
     opacity: 0;
 }
 
-.cbp-rfgrid li a:hover div {
+.cbp-rfgrid li:hover div {
 	opacity: 1;
 }
 
-.cbp-rfgrid li a div h3 {
+.cbp-rfgrid li h3 {
 	width: 100%;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.4em;
+	text-align: center;
 	letter-spacing: 2px;
-	padding: 0 10px;
 }
 
 /* Example for media query: change number of items per row */
@@ -155,9 +161,7 @@ a:hover {color: #fee652;}
 
 @media screen and (max-width: 400px) {
 	.cbp-rfgrid li {
-		width: 50%; /* Fallback */
-		width: -webkit-calc(100% / 2);
-		width: calc(100% / 2);
+		width: 100%; /* Fallback */
 	}
 }
 
