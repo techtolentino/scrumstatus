@@ -5,7 +5,7 @@
       "firstname": "Michael",
       "lastname": "Jordan",
       "project": "sample project description",
-      "status": "#FF5858",
+      "status": "red",
       "image": "http://telehealth.org/wp-content/images/user-placeholder.jpg"
     },
     "-JWT65QvjwD4TSFjDx4V": {
@@ -13,7 +13,7 @@
       "firstname": "Magic",
       "lastname": "Johnson",
       "project": "sample project description",
-      "status": "#FFF14A",
+      "status": "yellow",
       "image": "http://telehealth.org/wp-content/images/user-placeholder.jpg"
     },
     "-JWk3R8ejXlaOVBr7hxd": {
@@ -21,7 +21,7 @@
       "firstname": "Larry",
       "lastname": "Bird",
       "project": "sample project description",
-      "status": "#1BDA71",
+      "status": "green",
       "image": "http://telehealth.org/wp-content/images/user-placeholder.jpg"
     },
     "-JX0jlHRCfiI6DiDnySn": {
@@ -29,7 +29,7 @@
       "firstname": "Charles",
       "lastname": "Barkley",
       "project": "sample project description",
-      "status": "#FF8A40",
+      "status": "orange",
       "image": "http://telehealth.org/wp-content/images/user-placeholder.jpg"
     },
     "-JX0jlHRCfidafee23yS": {
@@ -37,7 +37,7 @@
       "firstname": "Shawn",
       "lastname": "Kemp",
       "project": "sample project description",
-      "status": "#A8F956",
+      "status": "grellow",
       "image": "http://telehealth.org/wp-content/images/user-placeholder.jpg"
     }
   }

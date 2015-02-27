@@ -1,6 +1,12 @@
 <h1>Team Members</h1>
-<div class="members" ng-repeat="member in members" style="background-color: {{ member.status }}">
-	<p><img src="{{ member.image }}" alt=""></p>
-	<p>{{ member.firstname }} {{ member.lastname }}</p>
-	<p>Working on: {{ member.project }}</p>
-</div>
+<ul class="cbp-rfgrid" ng-repeat="member in members">
+	<li class="{{member.status}}">
+		<img src="{{member.image}}" />
+		<div>
+			<h3>{{member.firstname}}</h3>
+			<button></button>
+			<button></button>
+			<button></button>
+		</div>
+	</li>
+</ul>
