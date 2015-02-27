@@ -34,10 +34,10 @@
     },
     "-JX0jlHRCfidafee23yS": {
       "date": 1410926056676,
-      "firstname": "Charles",
-      "lastname": "Barkley",
+      "firstname": "Shawn",
+      "lastname": "Kemp",
       "project": "sample project description",
-      "status": "#FF8A40",
+      "status": "#A8F956",
       "image": "http://telehealth.org/wp-content/images/user-placeholder.jpg"
     }
   }
