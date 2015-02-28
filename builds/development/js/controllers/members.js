@@ -7,8 +7,31 @@ myApp.controller('MembersController', function($scope, $firebase){
 
 	$scope.addMember = function(){
 		members.$push({
+			date: Firebase.ServerValue.TIMESTAMP,
 			firstname: $scope.firstname,
-			date: Firebase.ServerValue.TIMESTAMP
+			lastname: "",
+      project: "sample project description",
+      image: "http://telehealth.org/wp-content/images/user-placeholder.jpg",
+      upcoming: "PTO on Thursday",
+      status: {
+        color:  "plain",
+        contact: {
+          email: "test@email.com",
+          yahoo: "yahooIM"
+        },
+        projects: {
+          projectone: "project one",
+          projecttwo: "project two",
+          projectthree: "project three",
+          projectfour: "project four",
+          projectfive: "project five",
+          projectsix: "project six",
+          projectseven: "project seven",
+          projecteight: "project eight",
+          projectnine: "project nine",
+          projectten: "project ten"
+        }
+      }
 		})
 	}
 
