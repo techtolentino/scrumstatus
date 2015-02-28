@@ -5,4 +5,11 @@ myApp.controller('MembersController', function($scope, $firebase){
 
 	$scope.members = members.$asObject();
 
+	$scope.addMember = function(){
+		members.$push({
+			firstname: $scope.firstname,
+			date: Firebase.ServerValue.TIMESTAMP
+		})
+	}
+
 });
