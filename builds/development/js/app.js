@@ -1,8 +1,8 @@
 var myApp = angular.module('myApp', 
-	['ngRoute', 'firebase', 'appControllers']);
+	['ngRoute', 'firebase', 'appControllers', 'ngDialog']);
 
 // Dependencies
-var appControllers = angular.module('appControllers',['firebase']);
+var appControllers = angular.module('appControllers',['firebase', 'ngDialog']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
