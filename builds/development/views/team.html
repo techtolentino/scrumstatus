@@ -1,10 +1,10 @@
 <h1 id="teamTitle">Team Members</h1>
 <ul class="cbp-rfgrid" ng-repeat="member in members">
-	<li class="{{member.status}}">
-		<img src="{{member.image}}" />
+	<li class="{{member.status.color}}">
+		<img src="{{member.image}}">
 		<div>
 			<h3>{{member.firstname}}</h3>
-			<button>EDIT</button>
+			<button>View</button>
 		</div>
 	</li>
 </ul>
