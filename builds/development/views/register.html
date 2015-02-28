@@ -1,10 +1,8 @@
-<h1>Register</h1>
 <section class="register">
 	<form name="myform" 
 		ng-submit="register()"
 		novalidate>
-		<h3>Please register</h3>
-		<p>To begin building with your team</p>
+		<h1>Please register</h1>
 
 		<input type="firstname" name="firstname" placeholder="First Name" autofocus
 			ng-model="user.firstname" ng-required="true">
@@ -23,7 +21,7 @@
 		<p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched"></p>
 
 		<button type="submit" class="btn"
-			ng-disabled="myform.$invalid">Register</button>
-		<p>or <a href="#/login">Login</a></p>
+			ng-disabled="myform.$invalid">Login</button>
+		<button type="submit" class="altbtn">Register</button>
 	</form>
 </section>

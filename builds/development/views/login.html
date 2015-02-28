@@ -1,9 +1,8 @@
-<h1>Login</h1>
 <section class="login">
 	<form name="myform" 
 		ng-submit="login()"
 		novalidate>
-		<h3>Hello!</h3>
+		<h1>Hello!</h1>
 		<p>Please log-in</p>
 
 		<input type="email" name="email" placeholder="Email" autofocus
@@ -16,6 +15,6 @@
 
 		<button type="submit" class="btn"
 			ng-disabled="myform.$invalid">Login</button>
-		<p>or <a href="#/register">register</a></p>
+		<button type="submit" class="altbtn">Register</button>
 	</form>
 </section>

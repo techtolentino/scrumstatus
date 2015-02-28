@@ -8,23 +8,76 @@ body {
 	padding: 0;
 	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
-	background: #2b2b2b;
+	background: #0e72c6;
 }
 
 main {
 	text-align: center;
 }
 
+.login, .register {
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid white;
+	margin-top: 7%;
+	background: #ffffff;
+	color: #0e72c6;
+}
+
+input {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	height: 25px;
+	padding: 5px;
+	width: 200px;
+	border: none;
+	border-bottom: 2px solid #cecece;
+}
+input:focus {
+	outline-width: 0;
+	border-bottom: 2px solid #1fa0c6;
+	background-color: rgba(104, 247, 224, 0.19);
+	color: #1fa0c6;
+}
+
+button {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 90px;
+	margin: 30px 5px 20px 5px;
+	background: #FFF;
+	border: 1px solid #1FA0C6;
+	color: #1FA0C6;
+	padding: 15px 0 15px 0;
+}
+
+.settings {
+	color: #FFF;
+	border: 1px solid #FFF;
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+
 footer {
 
 }
 
-a {text-decoration: none; color: #fefefe;}
-a:hover {color: #fee652;}
+a {text-decoration: none; color: #f54400;}
+a:hover {color: #b13000;}
+.error {
+	color: #7e7e7e;
+	font-size: 10px;
+}
+
 
 .nav {
 	width: 100%;
-	background: #2b2b2b;
+	background: #0e72c6;
 	margin: 0 auto;
 }
 
@@ -37,6 +90,15 @@ a:hover {color: #fee652;}
 .nav li {
 	display: inline-block;
 	margin: 10px 20px 10px 20px;
+}
+
+.nav li a {
+	color: #ffffff;
+}
+
+.nav li a:hover {
+	border-bottom: 1px solid #e2fede;
+	color: #e2fede;
 }
 
 .brand a {

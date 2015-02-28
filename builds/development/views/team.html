@@ -1,5 +1,5 @@
 <h1 id="teamTitle">Team Members</h1>
-<div class="addMember">
+<!-- <div class="addMember">
 	<p>add member</p>
 	<form class="formmember"
 		name="memberform"
@@ -11,14 +11,14 @@
 				ng-disabled="memberform.$invalid">Add</button>
 			</div>
 	</form>
-</div>
+</div> -->
 
 <ul class="cbp-rfgrid" ng-repeat="member in members">
 	<li class="{{member.status.color}}">
 		<img src="{{member.image}}">
 		<div>
 			<h3>{{member.firstname}}</h3>
-			<button>View</button>
+			<div class="settings">View</div>
 		</div>
 	</li>
 </ul>
