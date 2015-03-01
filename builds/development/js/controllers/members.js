@@ -9,14 +9,12 @@ myApp.controller('MembersController', function($scope, $firebase, $location){
 		members.$push({
 			date: Firebase.ServerValue.TIMESTAMP,
 			firstname: $scope.firstname,
-			lastname: "",
-      project: "sample project description",
       image: "http://telehealth.org/wp-content/images/user-placeholder.jpg",
       upcoming: "PTO on Thursday",
       status: {
         color:  "plain",
         contact: {
-          email: "test@email.com",
+          email: $scope.status.contact.email,
           yahoo: "yahooIM"
         },
         projects: {
