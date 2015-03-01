@@ -8,7 +8,7 @@ body {
 	padding: 0;
 	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
-	background: #0e72c6;
+	background: url('../images/bg.jpg');
 }
 
 main {
@@ -21,8 +21,9 @@ main {
 	margin: 0 auto;
 	border: 1px solid white;
 	margin-top: 7%;
-	background: #ffffff;
-	color: #0e72c6;
+	background: rgba(255, 255, 255, 0.21);
+	color: #ffffff;
+	border: 1px solid #27b3c6;
 }
 
 input {
@@ -37,9 +38,9 @@ input {
 }
 input:focus {
 	outline-width: 0;
-	border-bottom: 2px solid #1fa0c6;
-	background-color: rgba(104, 247, 224, 0.19);
-	color: #1fa0c6;
+	border-bottom: 2px solid #27b3c6;
+	background-color: #ffffff;
+	color: #27b3c6;
 }
 
 button {
@@ -48,9 +49,24 @@ button {
 	width: 90px;
 	margin: 30px 5px 20px 5px;
 	background: #FFF;
-	border: 1px solid #1FA0C6;
-	color: #1FA0C6;
+	border: 1px solid #27b3c6;
+	color: #27b3c6;
 	padding: 15px 0 15px 0;
+}
+
+button:focus {
+	outline-width: 0;
+}
+
+.btn {
+	border: 1px solid #47cc1d;
+	background-color: #47cc1d;
+	color: #ffffff;
+}
+
+.btn:hover {
+	background-color: #4cb92d;
+	cursor: pointer;
 }
 
 .settings {
@@ -77,7 +93,7 @@ a:hover {color: #b13000;}
 
 .nav {
 	width: 100%;
-	background: #0e72c6;
+	background: rgba(161, 161, 161, 0.27);
 	margin: 0 auto;
 }
 
@@ -106,7 +122,7 @@ a:hover {color: #b13000;}
 }
 
 #teamTitle {
-	color: #f1f1f1;
+	color: #27b3c6;
 }
 
 /* Status Classes */
