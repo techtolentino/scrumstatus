@@ -1,4 +1,4 @@
-myApp.controller('MembersController', function($scope, $firebase){
+myApp.controller('MembersController', function($scope, $firebase, $location){
 
 	var ref = new Firebase('https://scrumcheck.firebaseio.com/members');
 	var members = $firebase(ref);
@@ -32,7 +32,8 @@ myApp.controller('MembersController', function($scope, $firebase){
           projectten: "project ten"
         }
       }
-		})
+		}).then(function(){
+        $location.path('/team');
+    })
 	}
-
 });

@@ -101,9 +101,15 @@ footer {
 a {text-decoration: none; color: #f54400;}
 a:hover {color: #b13000;}
 .error {
-	color: #FF044F;
+	color: #FFFFFF;
 	font-size: 12px;
 	font-style: italic;
+	background-color: #f63855;
+	padding: 3px;
+	text-align: center;
+	max-width: 210px;
+	display: block;
+	margin: 20px auto;
 }
 
 
