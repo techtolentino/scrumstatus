@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Scrum Status</title>
   <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/ngDialog.css">
+  <link rel="stylesheet" href="css/webfont.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <script src="js/lib/angular/angular.min.js"></script>
   <script src="js/lib/angular/angular-route.min.js"></script>
@@ -25,7 +26,9 @@
   <header>
     <nav class="topNav" ng-include="'views/nav.html'"></nav>
   </header>
-  <main ng-view></main>
+  <div class="wrapper">
+    <main ng-view></main>
+  </div>
   <footer></footer>
 
 </body>

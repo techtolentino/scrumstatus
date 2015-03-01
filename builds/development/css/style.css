@@ -19,6 +19,12 @@ main {
 	text-align: center;
 }
 
+.wrapper {
+	max-width: 1100px;
+	display: block;
+	margin: 0 auto;
+}
+
 .login, .register {
 	width: 320px;
 	display: block;
@@ -29,8 +35,6 @@ main {
 	color: #ffffff;
 	border: 1px solid transparent;
 }
-
-
 
 input {
 	display: block;
@@ -149,25 +153,53 @@ a:hover {color: #b13000;}
 
 /* Status Classes */
 .green {
-	background: #2ecc71;
+	background: #00c853; /* Old browsers */
+	background: -moz-linear-gradient(top,  #00c853 0%, #00e676 70%, #69f0ae 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00c853), color-stop(70%,#00e676), color-stop(100%,#69f0ae)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #00c853 0%,#00e676 70%,#69f0ae 100%); /* Chrome10+,Safari5.1+ */
 }
 .grellow {
-	background: #b9e93b;
+	background: #AEEA00; /* Old browsers */
+	background: -moz-linear-gradient(top,  #AEEA00 0%, #C6FF00 70%, #EEFF41 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AEEA00), color-stop(70%,#C6FF00), color-stop(100%,#EEFF41)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #AEEA00 0%,#C6FF00 70%,#EEFF41 100%); /* Chrome10+,Safari5.1+ */
 }
 .yellow {
-	background: #f1c40f;
+	background: #FDD835; /* Old browsers */
+	background: -moz-linear-gradient(top,  #FDD835 0%, #FFEB3B 70%, #FFF176 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FDD835), color-stop(70%,#FFEB3B), color-stop(100%,#FFF176)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #FDD835 0%,#FFEB3B 70%,#FFF176 100%); /* Chrome10+,Safari5.1+ */
 }
 .orange {
-	background: #f39c12;
+	background: #FF9100; /* Old browsers */
+	background: -moz-linear-gradient(top,  #FF9100 0%, #FFAB40 70%, #FFD180 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF9100), color-stop(70%,#FFAB40), color-stop(100%,#FFD180)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #FF9100 0%,#FFAB40 70%,#FFD180 100%); /* Chrome10+,Safari5.1+ */
 }
 .red {
-	background: #e74c3c;
+	background: #E53935; /* Old browsers */
+	background: -moz-linear-gradient(top,  #E53935 0%, #F44336 70%, #EF5350 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E53935), color-stop(70%,#F44336), color-stop(100%,#EF5350)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #E53935 0%,#F44336 70%,#EF5350 100%); /* Chrome10+,Safari5.1+ */
 }
 .darkred {
-	background: #c0392b;
+	background: #9C0000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #9C0000 0%, #c60802 70%, #E53935 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9C0000), color-stop(70%,#c60802), color-stop(100%,#E53935)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #9C0000 0%,#c60802 70%,#E53935 100%); /* Chrome10+,Safari5.1+ */
 }
 .plain {
-	background: #aaaaaa;
+	background: #B0BEC5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #B0BEC5 0%, #CFD8DC 70%, #ECEFF1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0BEC5), color-stop(70%,#CFD8DC), color-stop(100%,#ECEFF1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #B0BEC5 0%,#CFD8DC 70%,#ECEFF1 100%); /* Chrome10+,Safari5.1+ */
+}
+
+.unavailable {
+	background: #455A64; /* Old browsers */
+	background: -moz-linear-gradient(top,  #455A64 0%, #546E7A 70%, #78909C 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#455A64), color-stop(70%,#546E7A), color-stop(100%,#78909C)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #455A64 0%,#546E7A 70%,#78909C 100%); /* Chrome10+,Safari5.1+ */
 }
 
 
@@ -178,8 +210,6 @@ a:hover {color: #b13000;}
 	position: relative;
 	width: 100%;
 }
-
-
 .cbp-rfgrid li {
 	position: relative;
 	float: left;
@@ -188,15 +218,37 @@ a:hover {color: #b13000;}
 	width: -webkit-calc(100% / 8);
 	width: calc(100% / 8);
 	text-align: center;
-	height: 250px;
 	margin: 10px;
+	padding: 20px 5px 10px 5px;
 }
 
-.cbp-rfgrid li img {
-	width: 100px;
+.profilephoto {
+	background: #FFF;
+	padding: 10px;
+	width: 60px;
 	border-radius: 50%;
-	margin-top: 30px;
+	font-size: 4em;
+	margin: 0 auto;
+	color: #a4a4a4;
 }
+
+.actions {
+	display: inline-block;
+	padding: 5px 7px 5px 7px;
+	margin: auto 2px;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 4px;
+	font-size: .7em;
+}
+
+.actions:hover {
+	border: 1px solid #6117ff;
+	cursor: pointer;
+	background: #6117ff;
+	color: #ffffff;
+}
+
 
 /* Flexbox is used for centering the heading */
 .cbp-rfgrid li a div {

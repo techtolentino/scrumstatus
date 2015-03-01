@@ -14,7 +14,7 @@ myApp.controller('MembersController', function($scope, $firebase, $location){
       status: {
         color:  "plain",
         contact: {
-          email: $scope.status.contact.email,
+          email: "enter@youremail.com",
           yahoo: "yahooIM"
         },
         projects: {
