@@ -18,8 +18,15 @@
 		<div class="dripicon profilephoto">&#xe084;</div>
 		<div>
 			<h3>{{member.firstname}}</h3>
-			<div class="dripicon actions">&#xe077;</div>
+			<div class="dripicon actions" ng-click="clickToOpen()">&#xe077;</div>
 			<div class="dripicon actions">&#xe036;</div>
 		</div>
 	</li>
+	<script type="text/ng-template" id="templateId">
+	</script>
 </ul>
+
+<div id="view">
+  <h1>{{member.firstname}}</h1>
+  <p>Content goes here</p>
+</div>

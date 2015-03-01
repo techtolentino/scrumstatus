@@ -202,6 +202,57 @@ a:hover {color: #b13000;}
 	background: -webkit-linear-gradient(top,  #455A64 0%,#546E7A 70%,#78909C 100%); /* Chrome10+,Safari5.1+ */
 }
 
+/* Dashboard */
+#edit {
+	width: 90%;
+	height: auto;
+	background-color: rgba(255, 255, 255, .47);
+	display: block;
+	margin: 0 auto;
+	margin-top: 7%;
+	overflow: hidden;
+	clear: both;
+	padding: 10px 15px 30px 15px;
+}
+
+.dashTitle {
+	width: 100%;
+	height: auto;
+	color: #ffffff;
+	margin: 0 auto;
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.dashimage {
+	width: 15%;
+	float: left;
+	/*border: 1px solid white;*/
+	height: 100px;
+}
+
+.dashprojects {
+	width: 50%;
+	float: left;
+	/*border: 1px solid white;*/
+	height: auto;
+}
+
+textarea#memberproject {
+	width: 95%;
+	height: 75px;
+	font-size: 1.5em;
+	color: #0078c2;
+	padding: 10px;
+}
+
+textarea#memberproject:focus {
+	outline-width: 0;
+	background-color: rgba(0, 255, 184, 0.05);
+	border: 1px solid #0078c2;
+}
+
 
 /* Full width responsive grid */
 .cbp-rfgrid {
@@ -285,19 +336,19 @@ a:hover {color: #b13000;}
 
 /* Example for media query: change number of items per row */
 
-@media screen and (max-width: 1190px) {
+/*@media screen and (max-width: 1190px) {
 	.cbp-rfgrid li {
-		width: 20%; /* Fallback */
-		width: -webkit-calc(100% / 5.5);
-		width: calc(100% / 5.5);
+		width: 20%;  Fallback 
+		width: -webkit-calc(100% / 5.8);
+		width: calc(100% / 5.8);
 	}
-}
+}*/
 
 @media screen and (max-width: 945px) {
 	.cbp-rfgrid li {
-		width: 32.333333%; /* Fallback */
-		width: -webkit-calc(100% / 3);
-		width: calc(100% / 3);
+		width: 28.571428%; /* Fallback */
+		width: -webkit-calc(100% / 3.5);
+		width: calc(100% / 3.5);
 	}
 }
 
@@ -311,9 +362,9 @@ a:hover {color: #b13000;}
 
 @media screen and (max-width: 660px) {
 	.cbp-rfgrid li {
-		width: 33.3333333%; /* Fallback */
-		width: -webkit-calc(100% / 3.4);
-		width: calc(100% / 3.4);
+		width: 27.027027%; /* Fallback */
+		width: -webkit-calc(100% / 3.7);
+		width: calc(100% / 3.7);
 	}
 }
 

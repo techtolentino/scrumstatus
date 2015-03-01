@@ -17,6 +17,9 @@ myApp.config(['$routeProvider', function($routeProvider){
 		when('/about', {
 			templateUrl: 'views/about.html'
 		}).
+		when('/dashboard', {
+			templateUrl: 'views/dashboard.html'
+		}).
 		when('/register', {
 			templateUrl: 'views/register.html',
 			controller: 'MembersController'
