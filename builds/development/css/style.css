@@ -205,8 +205,9 @@ a:hover {color: #b13000;}
 /* Dashboard */
 #edit {
 	width: 90%;
-	height: auto;
-	background-color: rgba(255, 255, 255, .47);
+	height: 70vh;
+	background-color: #2EBFCE;
+	border: 1px solid #ffffff;
 	display: block;
 	margin: 0 auto;
 	margin-top: 7%;
@@ -239,6 +240,16 @@ a:hover {color: #b13000;}
 	height: auto;
 }
 
+#dashsubmit {
+	margin-top: 0;
+	float: right;
+}
+
+#dashsubmit:hover {
+	background-color: #27B3C6;
+	cursor: pointer;
+}
+
 textarea#memberproject {
 	width: 95%;
 	height: 75px;
@@ -249,8 +260,6 @@ textarea#memberproject {
 
 textarea#memberproject:focus {
 	outline-width: 0;
-	background-color: rgba(0, 255, 184, 0.05);
-	border: 1px solid #0078c2;
 }
 
 

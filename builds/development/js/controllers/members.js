@@ -36,9 +36,5 @@ myApp.controller('MembersController', function($scope, $firebase, $location, ngD
 	}// end addMember
 
 
-  $scope.clickToOpen = function(){
-    ngDialog.open({ template: 'templateId' });
-  };
-
 
 });

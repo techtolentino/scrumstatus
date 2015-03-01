@@ -33,7 +33,7 @@
 			className: 'ngdialog-theme-default',
 			plain: false,
 			showClose: true,
-			closeByDocument: true,
+			closeByDocument: false,
 			closeByEscape: true,
 			closeByNavigation: false,
 			appendTo: false,
