@@ -5,8 +5,14 @@
 	<div class="dashimage">
 		<img src="http://placehold.it/70x70">
 	</div>
+	<form name="dashform"
+		ng-submit="dashUpdate()"
+		novalidate>
 	<div class="dashprojects">
 		<textarea name="projects" id="memberproject" placeholder="Enter your projects"></textarea>
+	
 		<a type="submit" class="btn" id="dashsubmit" ng-href="#/team">Update</a>
+		<p>Return to <a ng-href="#/team">Team Page</a></p>
+		</form>
 	</div>
 </div>
