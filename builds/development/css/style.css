@@ -208,14 +208,14 @@ ______________________________*/
 #edit {
 	width: 90%;
 	max-width: 600px;
-	height: 70vh;
+	height: auto;
 	background-color: rgba(206, 206, 206, 0.3);
 	border: 3px solid rgba(255, 255, 255, 0.6);
 	display: block;
 	margin: 0 auto;
 	margin-top: 7%;
 	overflow: hidden;
-	padding: 5px 10px 20px 10px;
+	padding: 5px 10px 45px 10px;
 	text-align: center;
 }
 
@@ -276,6 +276,25 @@ textarea#memberproject {
 
 textarea#memberproject:focus {
 	outline-width: 0;
+}
+
+.radioColors {
+	list-style-type: none;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.radioColors li {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	margin: 5px;
+	text-align: center;
+}
+
+label {
+	text-align: center;
 }
 
 
@@ -388,16 +407,12 @@ ______________________________*/
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 476px) {
 	.cbp-rfgrid li {
 		width: 100%;
-		margin: 0;
+		max-width: 300px;
+		margin: 0 auto;
 		margin-bottom: 10px;
-	}
-}
-
-@media screen and (max-width: 300px) {
-	.cbp-rfgrid li {
-		width: 100%;
+		float: none;
 	}
 }

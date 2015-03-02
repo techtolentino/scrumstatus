@@ -1,1 +1,4 @@
-myApp.controller('DashboardController', function($scope, $firebase, $location, FIREBASE_URL){});
+myApp.controller('DashboardController', function($scope, 
+	$firebase, $location, FIREBASE_URL){
+
+});
