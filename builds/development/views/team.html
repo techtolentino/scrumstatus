@@ -13,17 +13,13 @@
 	</form>
 </div> -->
 
-<ul class="cbp-rfgrid" ng-repeat="member in members">
+<ul class="cbp-rfgrid" ng-repeat="(key,member) in members">
 	<li class="{{member.status.color}}">
 		<div class="dripicon profilephoto">&#xe084;</div>
 		<div>
 			<h3>{{member.firstname}}</h3>
-			<div class="dripicon actions" 
-				ng-click="viewStatus()">&#xe077;</div>
-			
-			<div class="dripicon actions" 
-				ng-click="editStatus()">&#xe036;</div>
-
+			<a class="dripicon actions" ng-href="#/views/dashboard/{{key}}">&#xe077;</a>
+			<a class="dripicon actions" ng-href="#/views/dashboard/{{key}}">&#xe036;</a>
 		</div>
 	</li>
 </ul>

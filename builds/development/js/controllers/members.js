@@ -1,6 +1,6 @@
-myApp.controller('MembersController', function($scope, $firebase, $location, ngDialog){
+myApp.controller('MembersController', function($scope, $firebase, $location, ngDialog, FIREBASE_URL){
 
-	var ref = new Firebase('https://scrumcheck.firebaseio.com/members');
+	var ref = new Firebase(FIREBASE_URL + 'members');
 	var members = $firebase(ref);
 
 	$scope.members = members.$asObject();
@@ -35,9 +35,13 @@ myApp.controller('MembersController', function($scope, $firebase, $location, ngD
     })
 	}// end addMember
 
-  $scope.viewStatus = function(){
-    ngDialog.open({ template: 'views/popupTmpl.html' });
-  }
+    $scope.viewStatus = function() {
+
+      $scope.openDialogId = 
+        ngDialog.open({
+            template: '../../views/dashboard.html',
+        });
+    };
 
   $scope.editStatus = function(){
     

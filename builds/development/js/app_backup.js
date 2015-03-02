@@ -15,13 +15,15 @@ myApp.config(['$routeProvider', function($routeProvider){
 			templateUrl: 'views/team.html',
 			controller: 'MembersController'
 		}).
-		when('/views/dashboard/:uId', {
-			templateUrl: 'views/dashboard.html'
-			controller: 'DashboardController'
+		when('/about', {
+			templateUrl: 'views/about.html'
+		}).
+		when('/popupTmpl', {
+			templateUrl: 'views/popupTmpl.html',
+			controller: 'MembersController'
 		}).
 		when('/dashboard', {
-			templateUrl: 'views/dashboard.html',
-						controller: 'MembersController'
+			templateUrl: 'views/dashboard.html'
 		}).
 		when('/register', {
 			templateUrl: 'views/register.html',
