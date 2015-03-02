@@ -1,5 +1,5 @@
 var myApp = angular.module('myApp', 
-	['ngRoute', 'firebase', 'appControllers', 'ngDialog'])
+	['ngRoute', 'firebase', 'appControllers'])
 .constant('FIREBASE_URL', 'https://scrumcheck.firebaseio.com/');
 
 // Dependencies
@@ -16,12 +16,8 @@ myApp.config(['$routeProvider', function($routeProvider){
 			controller: 'MembersController'
 		}).
 		when('/views/dashboard/:uId', {
-			templateUrl: 'views/dashboard.html'
-			controller: 'DashboardController'
-		}).
-		when('/dashboard', {
 			templateUrl: 'views/dashboard.html',
-						controller: 'MembersController'
+			controller: 'DashboardController'
 		}).
 		when('/register', {
 			templateUrl: 'views/register.html',

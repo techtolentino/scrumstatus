@@ -1,4 +1,4 @@
-myApp.controller('MembersController', function($scope, $firebase, $location, ngDialog, FIREBASE_URL){
+myApp.controller('MembersController', function($scope, $firebase, $location, FIREBASE_URL){
 
 	var ref = new Firebase(FIREBASE_URL + 'members');
 	var members = $firebase(ref);

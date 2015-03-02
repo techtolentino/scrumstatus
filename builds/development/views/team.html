@@ -14,12 +14,12 @@
 </div> -->
 
 <ul class="cbp-rfgrid" ng-repeat="(key,member) in members">
-	<li class="{{member.status.color}}">
-		<div class="dripicon profilephoto">&#xe084;</div>
-		<div>
-			<h3>{{member.firstname}}</h3>
-			<a class="dripicon actions" ng-href="#/views/dashboard/{{key}}">&#xe077;</a>
-			<a class="dripicon actions" ng-href="#/views/dashboard/{{key}}">&#xe036;</a>
-		</div>
-	</li>
+	<a ng-href="#/views/dashboard/{{key}}">
+		<li class="{{member.status.color}}">
+			<div class="dripicon profilephoto">&#xe084;</div>
+			<div>
+				<h3>{{member.firstname}}</h3>
+			</div>
+		</li>
+	</a>
 </ul>
