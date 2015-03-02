@@ -2,7 +2,7 @@ var myApp = angular.module('myApp',
 	['ngRoute', 'firebase', 'appControllers', 'ngDialog']);
 
 // Dependencies
-var appControllers = angular.module('appControllers',['firebase', 'ngDialog']);
+var appControllers = angular.module('appControllers',['firebase']);
 
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
@@ -16,6 +16,10 @@ myApp.config(['$routeProvider', function($routeProvider){
 		}).
 		when('/about', {
 			templateUrl: 'views/about.html'
+		}).
+		when('/popupTmpl', {
+			templateUrl: 'views/popupTmpl.html',
+			controller: 'MembersController'
 		}).
 		when('/dashboard', {
 			templateUrl: 'views/dashboard.html'

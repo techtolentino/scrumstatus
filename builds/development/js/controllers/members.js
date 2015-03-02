@@ -35,6 +35,12 @@ myApp.controller('MembersController', function($scope, $firebase, $location, ngD
     })
 	}// end addMember
 
+  $scope.viewStatus = function(){
+    ngDialog.open({ template: 'views/popupTmpl.html' });
+  }
 
+  $scope.editStatus = function(){
+    
+  }
 
 });
