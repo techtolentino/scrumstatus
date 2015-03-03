@@ -1,18 +1,4 @@
 <h1 id="teamTitle">Team Members</h1>
-<!-- <div class="addMember">
-	<p>add member</p>
-	<form class="formmember"
-		name="memberform"
-		ng-submit="addMember()"
-		novalidate>
-			<div class="inputwrapper">
-				<input type="text" name="firstname" placeholder"First Name" ng-model="firstname" ng-required="true">
-				<button type="submit" class="btn"
-				ng-disabled="memberform.$invalid">Add</button>
-			</div>
-	</form>
-</div> -->
-
 <ul class="cbp-rfgrid" ng-repeat="(key,member) in members">
 	<a ng-href="#/views/dashboard/{{key}}">
 		<li class="{{member.status.color}}">

@@ -1,6 +1,6 @@
-<div id="edit">
+<div id="edit" ng-controller="DashboardController">
 	<div class="dashTitle">
-		<h1 ng-model="firstname">Welcome to your Dashboard {{member.firstname}}</h1>
+		<h1>{{member.firstname}}</h1>
 	</div>
 	<div class="dashimage">
 		<img src="http://placehold.it/70x70">
@@ -10,43 +10,48 @@
 		novalidate>
 	<div class="dashprojects">
 		<textarea name="projects" id="memberproject" placeholder="Enter your projects"></textarea>
-
-		<ul class="radioColors">
-			<li>
-				<label for="color" id="greenRadio">
-					<input type="radio" name="color" value="green" checked>
-				</label>
-			</li>
-			<li>
-				<label for="color" id="grellowRadio">
-					<input type="radio" name="color" value="grellow">
-				</label>
-			</li>
-			<li>
-				<label for="color" id="yellowRadio">
-					<input type="radio" name="color" value="yellow">
-				</label>
-			</li>
-			<li>
-				<label for="color" id="orangeRadio">
-					<input type="radio" name="color" value="orange">
-				</label>
-			</li>
-			<li>
-				<label for="color" id="redRadio">
-					<input type="radio" name="color" value="red">
-				</label>
-			</li>
-			<li>
-				<label for="color" id="darkredRadio">
-					<input type="radio" name="color" value="darkred">
-				</label>
-			</li>
-		</ul>
-	
-		<a type="submit" class="btn" id="dashsubmit" ng-href="#/team">Update</a>
-		<p>Return to <a ng-href="#/team">Team Page</a></p>
-
-		</form>
 	</div>
+	<ul class="radioColors">
+		<li id="greenRadio">
+			<label for="color">
+				Green
+				<input type="radio" name="color" value="green" checked>
+			</label>
+		</li>
+		<li id="grellowRadio">
+			<label for="color">
+				Grellow
+				<input type="radio" name="color" value="grellow">
+			</label>
+		</li>
+		<li id="yellowRadio">
+			<label for="color">
+				Yellow
+				<input type="radio" name="color" value="yellow">
+			</label>
+		</li>
+		<li id="orangeRadio">
+			<label for="color">
+				Orange
+				<input type="radio" name="color" value="orange">
+			</label>
+		</li>
+		<li id="redRadio">
+			<label for="color">
+				Red
+				<input type="radio" name="color" value="red">
+			</label>
+		</li>
+		<li id="darkredRadio">
+			<label for="color">
+				DarkRed
+				<input type="radio" name="color" value="darkred">
+			</label>
+		</li>
+	</ul>
+
+	<a type="submit" class="btn" id="dashsubmit" ng-href="#/team">Update</a>
+	<p>Return to <a ng-href="#/team">Team Page</a></p>
+
+	</form>
 </div>

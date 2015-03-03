@@ -278,25 +278,52 @@ textarea#memberproject:focus {
 	outline-width: 0;
 }
 
+input[type="radio"] {
+	visibility: hidden;
+}
+
 .radioColors {
 	list-style-type: none;
 	display: block;
 	margin: 0 auto;
 	margin-top: 30px;
+	margin-right: 30px;
+	padding-left: 25px;
 }
 
 .radioColors li {
 	display: inline-block;
-	width: 50px;
-	height: 30px;
+	width: 65px;
+	height: 25px;
+	padding: 5px;
 	margin: 5px;
 	text-align: center;
 }
 
 label {
 	text-align: center;
+	vertical-align: middle;
+	vertical-align: -webkit-baseline-middle;
 }
 
+#greenRadio {
+	background: #00c853;
+}
+#grellowRadio {
+	background: #AEEA00;
+}
+#yellowRadio {
+	background: #FDD835;
+}
+#orangeRadio {
+	background: #FF9100;
+}
+#redRadio {
+	background: #E53935;
+}
+#darkredRadio {
+	background: #9C0000;
+}
 
 /* Full width responsive grid 
 ______________________________*/

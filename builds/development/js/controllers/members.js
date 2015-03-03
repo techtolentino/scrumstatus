@@ -35,16 +35,4 @@ myApp.controller('MembersController', function($scope, $firebase, $location, FIR
     })
 	}// end addMember
 
-    $scope.viewStatus = function() {
-
-      $scope.openDialogId = 
-        ngDialog.open({
-            template: '../../views/dashboard.html',
-        });
-    };
-
-  $scope.editStatus = function(){
-    
-  }
-
 });
