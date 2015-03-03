@@ -8,7 +8,7 @@ body {
 	padding: 0;
 	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
-	background: url('../images/bg2.jpg') no-repeat center center fixed; 
+	background: white; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,6 +17,14 @@ body {
 
 main {
 	text-align: center;
+}
+
+main h1 {
+	font-size: 2em;
+}
+
+h1, p {
+	color: #848484;
 }
 
 .wrapper {
@@ -33,7 +41,8 @@ main {
 	margin-top: 7%;
 	background: rgba(255, 255, 255, 0.17);
 	color: #ffffff;
-	border: 1px solid transparent;
+	border: 2px solid #d7d7d7;
+	border-radius: 3px;
 }
 
 input {
@@ -42,7 +51,7 @@ input {
 	margin-bottom: 20px;
 	height: 25px;
 	padding: 8px 5px 8px 10px;
-	color: #27b3c6;
+	color: #e8244e;
 	width: 200px;
 	border: none;
 	border-bottom: 2px solid #cecece;
@@ -50,9 +59,9 @@ input {
 }
 input:focus {
 	outline-width: 0;
-	border-bottom: 2px solid #27b3c6;
+	border-bottom: 2px solid #e8244e;
 	background-color: rgba(243, 255, 179, 0.53);
-	color: #27b3c6;
+	color: #e8244e;
 	font-size: 1.1em;
 }
 
@@ -62,9 +71,10 @@ button {
 	width: 90px;
 	margin: 30px 5px 20px 5px;
 	background: #FFF;
-	border: 1px solid #27b3c6;
-	color: #27b3c6;
+	border: 1px solid #e8244e;
+	color: #e8244e;
 	padding: 15px 0 15px 0;
+	font-size: 1.2em;
 }
 
 button:focus {
@@ -72,18 +82,20 @@ button:focus {
 }
 
 .btn {
-	border: 1px solid #47cc1d;
-	background-color: #47cc1d;
+	border: 1px solid #2bd3c3;
+	background-color: #2bd3c3;
 	color: #ffffff;
+	font-size: 1.2em;
 }
 
 .btn:hover {
-	background-color: #4cb92d;
+	background-color: #25bcae;
+	border-bottom: 1px solid transparent;
 	cursor: pointer;
 }
 
 .altbtn:hover {
-	background-color: #27b3c6;
+	background-color: #e8244e;
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -97,18 +109,13 @@ button:focus {
 	padding: 5px;
 }
 
-
-footer {
-
-}
-
-a {text-decoration: none; color: #f54400;}
-a:hover {color: #b13000;}
+a {text-decoration: none; color: #E8244E;}
+a:hover {color: #c71f43;}
 .error {
 	color: #FFFFFF;
 	font-size: 12px;
 	font-style: italic;
-	background-color: #f63855;
+	background-color: #1ae5d3;
 	padding: 3px;
 	text-align: center;
 	max-width: 210px;
@@ -119,7 +126,7 @@ a:hover {color: #b13000;}
 
 .nav {
 	width: 100%;
-	background: rgba(161, 161, 161, 0.27);
+	background: rgba(161, 161, 161, 0.15);
 	margin: 0 auto;
 }
 
@@ -135,12 +142,13 @@ a:hover {color: #b13000;}
 }
 
 .nav li a {
-	color: #ffffff;
+	color: #5bb9e7;
+	font-size: 1.2em;
 }
 
 .nav li a:hover {
 	border-bottom: 1px solid #e2fede;
-	color: #e2fede;
+	color: #fe377a;
 }
 
 .brand a {
@@ -148,59 +156,99 @@ a:hover {color: #b13000;}
 }
 
 #teamTitle {
-	color: #ffffff;
+	color: #7c7c7c;
+	margin-top: 35px;
 }
 
 /* Status Color Classes 
 ______________________________*/
 .green {
-	background: #00c853;
-	background: -moz-linear-gradient(top,  #00c853 0%, #00e676 70%, #69f0ae 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00c853), color-stop(70%,#00e676), color-stop(100%,#69f0ae));
-	background: -webkit-linear-gradient(top,  #00c853 0%,#00e676 70%,#69f0ae 100%);
+	border: 1px solid #26C281;
+}
+.green h3 {
+	background: #26C281;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.green .profilephoto {
+	border: 1px solid #26C281;
 }
 .grellow {
-	background: #AEEA00;
-	background: -moz-linear-gradient(top,  #AEEA00 0%, #C6FF00 70%, #EEFF41 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AEEA00), color-stop(70%,#C6FF00), color-stop(100%,#EEFF41));
-	background: -webkit-linear-gradient(top,  #AEEA00 0%,#C6FF00 70%,#EEFF41 100%);
+	border: 1px solid #D3E93A;
+}
+.grellow h3 {
+	background: #D3E93A;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.grellow .profilephoto {
+	border: 1px solid #D3E93A;
 }
 .yellow {
+	border: 1px solid #FDD835;
+}
+.yellow h3 {
 	background: #FDD835;
-	background: -moz-linear-gradient(top,  #FDD835 0%, #FFEB3B 70%, #FFF176 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FDD835), color-stop(70%,#FFEB3B), color-stop(100%,#FFF176));
-	background: -webkit-linear-gradient(top,  #FDD835 0%,#FFEB3B 70%,#FFF176 100%);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.yellow .profilephoto {
+	border: 1px solid #FDD835;
 }
 .orange {
-	background: #FF9100;
-	background: -moz-linear-gradient(top,  #FF9100 0%, #FFAB40 70%, #FFD180 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF9100), color-stop(70%,#FFAB40), color-stop(100%,#FFD180));
-	background: -webkit-linear-gradient(top,  #FF9100 0%,#FFAB40 70%,#FFD180 100%);
+	border: 1px solid #F9690E;
+}
+.orange h3 {
+	background: #F9690E;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.orange .profilephoto {
+	border: 1px solid #F9690E;
 }
 .red {
-	background: #E53935;
-	background: -moz-linear-gradient(top,  #E53935 0%, #F44336 70%, #EF5350 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E53935), color-stop(70%,#F44336), color-stop(100%,#EF5350));
-	background: -webkit-linear-gradient(top,  #E53935 0%,#F44336 70%,#EF5350 100%);
+	border: 1px solid #DC3023;
+}
+.red h3 {
+	background: #DC3023;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.red .profilephoto {
+	border: 1px solid #DC3023;
 }
 .darkred {
-	background: #9C0000;
-	background: -moz-linear-gradient(top,  #9C0000 0%, #c60802 70%, #E53935 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9C0000), color-stop(70%,#c60802), color-stop(100%,#E53935));
-	background: -webkit-linear-gradient(top,  #9C0000 0%,#c60802 70%,#E53935 100%);
+	border: 1px solid #8F1D21;
+}
+.darkred h3 {
+	background: #8F1D21;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.darkred .profilephoto {
+	border: 1px solid #8F1D21;
 }
 .plain {
-	background: #B0BEC5;
-	background: -moz-linear-gradient(top,  #B0BEC5 0%, #CFD8DC 70%, #ECEFF1 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B0BEC5), color-stop(70%,#CFD8DC), color-stop(100%,#ECEFF1));
-	background: -webkit-linear-gradient(top,  #B0BEC5 0%,#CFD8DC 70%,#ECEFF1 100%);
+	border: 1px solid #BDC3C7;
 }
-
+.plain h3 {
+	background: #BDC3C7;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.plain .profilephoto {
+	border: 1px solid #BDC3C7;
+}
 .unavailable {
-	background: #455A64;
-	background: -moz-linear-gradient(top,  #455A64 0%, #546E7A 70%, #78909C 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#455A64), color-stop(70%,#546E7A), color-stop(100%,#78909C));
-	background: -webkit-linear-gradient(top,  #455A64 0%,#546E7A 70%,#78909C 100%);
+	border: 1px solid #6C7A89;
+}
+.unavailable h3 {
+	background: #6C7A89;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.unavailable .profilephoto {
+	border: 1px solid #6C7A89;
 }
 
 /* Dashboard 
@@ -209,14 +257,14 @@ ______________________________*/
 	width: 90%;
 	max-width: 600px;
 	height: auto;
-	background-color: rgba(206, 206, 206, 0.3);
-	border: 3px solid rgba(255, 255, 255, 0.6);
+	border: 2px solid #d7d7d7;
 	display: block;
 	margin: 0 auto;
 	margin-top: 7%;
 	overflow: hidden;
 	padding: 5px 10px 45px 10px;
 	text-align: center;
+	border-radius: 3px;
 }
 
 /** {outline: 1px solid red;}*/
@@ -231,8 +279,14 @@ ______________________________*/
 	padding-bottom: 15px;
 }
 
+.dashTitle h1 {
+	font-size: 4em;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
 .dashimage img {
-	margin: 15px 0 30px 0;
+	margin-bottom: 30px;
 	border-radius: 50%;
 }
 
@@ -249,16 +303,11 @@ ______________________________*/
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	border: 1px solid #29ABBC;
 	padding: 15px 10px 15px 10px;
-	background-color: #29ABBC;
-	color: #ffffff;
 	font-size: 1.3em;
 }
 
 #dashsubmit:hover {
-	background-color: #31cee4;
-	border: 1px solid #31cee4; 
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -307,22 +356,22 @@ label {
 }
 
 #greenRadio {
-	background: #00c853;
+	background: #26C281;
 }
 #grellowRadio {
-	background: #AEEA00;
+	background: #D3E93A;
 }
 #yellowRadio {
 	background: #FDD835;
 }
 #orangeRadio {
-	background: #FF9100;
+	background: #F9690E;
 }
 #redRadio {
-	background: #E53935;
+	background: #DC3023;
 }
 #darkredRadio {
-	background: #9C0000;
+	background: #8F1D21;
 }
 
 /* Full width responsive grid 
