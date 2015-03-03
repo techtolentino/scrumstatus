@@ -9,27 +9,12 @@ myApp.controller('MembersController', function($scope, $firebase, $location, FIR
 		members.$push({
 			date: Firebase.ServerValue.TIMESTAMP,
 			firstname: $scope.firstname,
-      image: "http://telehealth.org/wp-content/images/user-placeholder.jpg",
-      upcoming: "PTO on Thursday",
-      status: {
-        color:  "plain",
-        contact: {
-          email: "enter@youremail.com",
-          yahoo: "yahooIM"
-        },
-        projects: {
-          projectone: "project one",
-          projecttwo: "project two",
-          projectthree: "project three",
-          projectfour: "project four",
-          projectfive: "project five",
-          projectsix: "project six",
-          projectseven: "project seven",
-          projecteight: "project eight",
-          projectnine: "project nine",
-          projectten: "project ten"
-        }
-      }
+      image : "http://telehealth.org/wp-content/images/user-placeholder.jpg",
+      color : "plain",
+      projectDescription : "Currently working on...",
+      email: "enter@youremail.com",
+      yahoo : "yahooIM",
+      upcoming : "PTO / WFH / OOO"
 		}).then(function(){
         $location.path('/team');
     })
