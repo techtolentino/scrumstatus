@@ -20,7 +20,7 @@ main {
 }
 
 main h1 {
-	font-size: 2em;
+	font-size: 2em; 
 }
 
 h1, p {
@@ -33,17 +33,34 @@ h1, p {
 	margin: 0 auto;
 }
 
-.login, .register {
+.login-left, .register {
 	width: 380px;
 	max-width: 90%;
-	display: block;
+	display: inline-block;
 	margin: 0 auto;
 	border: 1px solid #FFF;
-	margin-top: 7%;
+	margin-top: 5%;
 	background: rgba(255, 255, 255, 0.17);
 	color: #FFF;
 	border: 2px solid #19cee9;
 	border-radius: 3px;
+}
+
+.login-right {
+	width: 380px;
+	max-width: 90%;
+	display: inline-block;
+	margin: 0 auto;
+	border: 1px solid #FFF;
+	margin-top: 5%;
+	background: rgba(255, 255, 255, 0.17);
+	color: #FFF;
+	border: 2px solid #19cee9;
+	border-radius: 3px;
+}
+
+.dripicon a:hover {
+	background: #dffef7;
 }
 
 input {
@@ -304,7 +321,7 @@ ______________________________*/
 	border: 2px solid transparent;
 	display: block;
 	margin: 0 auto;
-	margin-top: 7%;
+	margin-top: 5%;
 	overflow: hidden;
 	/*padding: 5px 10px 45px 10px;*/
 	text-align: center;
@@ -388,7 +405,7 @@ ______________________________*/
 	padding-bottom: 15px;
 }
 
-.register h1, .login h1{
+.register h1, .login-left h1{
 	font-size: 2em;
 	margin-bottom: 5px;
 	margin-top: 0;
@@ -410,7 +427,7 @@ ______________________________*/
 	border: 2px solid #819fa6;
 }
 
-.dashTitle p, .register p, .login p{
+.dashTitle p, .register p, .login-left p{
 	margin-bottom: 25px;
 	font-size: 1.2em;
 }
@@ -566,6 +583,45 @@ ______________________________*/
 #homeProfile {
 	margin-top: 0;
 	margin-bottom: 0;
+	box-shadow: 3px -3px 7px rgba(153, 153, 153, 0.49);
+	-webkit-filter: grayscale(0.9);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  filter: url(#greyscale);
+  filter: #aec7c2;
+}
+
+#homeProfile:hover {
+	-webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: transparent;	
+}
+
+.greenBorder {
+	border: 1px solid #26C281;
+}
+.grellowBorder {
+	border: 1px solid #D3E93A;
+}
+.yellowBorder {
+	border: 1px solid #FDD835;
+}
+.orangeBorder {
+	border: 1px solid #F9690E;
+}
+.redBorder {
+	border: 1px solid #DC3023;
+}
+.darkredBorder {
+	border: 1px solid #8F1D21;
+}
+.unavailableBorder {
+	border: 1px solid #6C7A89;
+}
+
+.plainBorder {
+	border: 1px solid #BDC3C7;
 }
 
 .actions {
