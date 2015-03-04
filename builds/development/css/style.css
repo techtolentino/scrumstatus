@@ -139,10 +139,11 @@ a:hover {color: #c71f43;}
 	background-color: rgba(177, 177, 177, 0.72);
 	padding: 5px 3px 5px 3px;
 	text-align: center;
-	width: 410px;
+	width: 409px;
 	max-width: 80%;
 	display: block;
 	margin: 20px auto;
+	margin-top: -30px;
 }
 
 .nav {
@@ -380,7 +381,7 @@ ______________________________*/
 }
 
 .dashTitle p, .register p, .login p{
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	font-size: 1.2em;
 }
 
