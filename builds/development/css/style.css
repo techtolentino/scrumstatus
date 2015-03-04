@@ -42,7 +42,7 @@ h1, p {
 	margin-top: 7%;
 	background: rgba(255, 255, 255, 0.17);
 	color: #FFF;
-	border: 2px solid #D7D7D7;
+	border: 2px solid #2BD3C3;
 	border-radius: 3px;
 }
 
@@ -145,7 +145,6 @@ a:hover {color: #c71f43;}
 	margin: 20px auto;
 }
 
-
 .nav {
 	width: 100%;
 	background: rgba(161, 161, 161, 0.15);
@@ -160,11 +159,11 @@ a:hover {color: #c71f43;}
 
 .nav li {
 	display: inline-block;
-	margin: 10px 20px 10px 20px;
+	margin: 10px 15px 10px 15px;
 }
 
 .nav li a {
-	color: #5bb9e7;
+	color: #2BD3C3;
 	font-size: 1.2em;
 }
 
@@ -279,17 +278,15 @@ ______________________________*/
 	width: 90%;
 	max-width: 600px;
 	height: auto;
-	border: 2px solid #d7d7d7;
+	border: 2px solid #2BD3C3;
 	display: block;
 	margin: 0 auto;
 	margin-top: 7%;
 	overflow: hidden;
-	padding: 5px 10px 45px 10px;
+	/*padding: 5px 10px 45px 10px;*/
 	text-align: center;
 	border-radius: 3px;
 }
-
-/** {outline: 1px solid red;}*/
 
 .dashTitle {
 	width: 100%;
@@ -297,28 +294,29 @@ ______________________________*/
 	color: #ffffff;
 	margin: 0 auto;
 	display: block;
-	padding-top: 15px;
+	/*padding-top: 15px;*/
 	padding-bottom: 15px;
 }
 
-.dashTitle h1 {
+.dashTitle h1, .register h1, .login h1{
 	font-size: 4em;
 	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-top: 0;
+	padding: 15px 0 15px 0;
+	background-color: #2BD3C3;
+	color: white;
+}
+
+.dashTitle p, .register p, .login p{
+	margin-bottom: 50px;
 }
 
 .dashimage img {
 	margin-bottom: 30px;
+	margin-top: 30px;
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
-}
-
-
-.dashprojects {
-	/*width: 50%;*/
-	/*float: left;*/
-	/*height: auto;*/
 }
 
 #dashsubmit {
@@ -337,8 +335,8 @@ ______________________________*/
 }
 
 textarea#memberproject {
-	width: 95%;
-	max-width: 500px;
+	width: 500px;
+	max-width: 90%;
 	height: 85px;
 	font-size: 1.5em;
 	color: #0078C2;
@@ -378,7 +376,7 @@ textarea#memberproject:focus {
 .radio-toolbar input[type="radio"]:checked + label { 
   opacity: 1;
   color: white;
-	box-shadow: 0 3px 1px #888888;
+	box-shadow: 1px 3px 3px #888888;
 }
 
 #greenRadio {
