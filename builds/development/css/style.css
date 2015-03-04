@@ -34,41 +34,43 @@ h1, p {
 }
 
 .login, .register {
-	width: 320px;
+	width: 560px;
+	max-width: 90%;
 	display: block;
 	margin: 0 auto;
-	border: 1px solid white;
+	border: 1px solid #FFF;
 	margin-top: 7%;
 	background: rgba(255, 255, 255, 0.17);
-	color: #ffffff;
-	border: 2px solid #d7d7d7;
+	color: #FFF;
+	border: 2px solid #D7D7D7;
 	border-radius: 3px;
 }
 
 input {
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	height: 25px;
 	padding: 8px 5px 8px 10px;
 	color: #e8244e;
-	width: 200px;
+	width: 400px;
+	max-width: 80%;
 	border: none;
 	border-bottom: 2px solid #cecece;
-	font-size: 1.1em;
+	font-size: 1.5em;
 }
 input:focus {
 	outline-width: 0;
 	border-bottom: 2px solid #e8244e;
 	background-color: rgba(243, 255, 179, 0.53);
 	color: #e8244e;
-	font-size: 1.1em;
+	font-size: 1.5em;
 }
 
 button {
 	margin: 0 auto;
 	margin-bottom: 20px;
-	width: 90px;
+	width: 163px;
 	margin: 30px 5px 20px 5px;
 	background: #FFF;
 	border: 1px solid #e8244e;
@@ -97,7 +99,7 @@ button:focus {
 .altbtn {
 	margin: 0 auto;
 	margin-bottom: 20px;
-	width: 90px;
+	width: 160px;
 	background: #FFF;
 	color: #e8244e;
 	padding: 15px 0 15px 0;
@@ -129,12 +131,13 @@ a {text-decoration: none; color: #E8244E;}
 a:hover {color: #c71f43;}
 .error {
 	color: #FFFFFF;
-	font-size: 12px;
+	font-size: 14px;
 	font-style: italic;
-	background-color: #1ae5d3;
-	padding: 3px;
+	background-color: rgba(177, 177, 177, 0.72);
+	padding: 5px 3px 5px 3px;
 	text-align: center;
-	max-width: 210px;
+	width: 410px;
+	max-width: 80%;
 	display: block;
 	margin: 20px auto;
 }
@@ -315,7 +318,7 @@ ______________________________*/
 
 #dashsubmit {
 	display: block;
-	width: 90px;
+	width: 163px;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;

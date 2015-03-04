@@ -2,7 +2,8 @@
 	<form name="myform" 
 		ng-submit="addMember()"
 		novalidate>
-		<h1>Add Person</h1>
+		<h1>Sign Up</h1>
+		<p>It's easy to get started</p>
 
 		<input type="firstname" name="firstname" placeholder="First Name" autofocus
 			ng-model="firstname" ng-required="true">
@@ -20,9 +21,9 @@
 			ng-model="user.password" ng-required="true">
 		<p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Please enter a password</p>
 
-		<button type="submit" class="altbtn"
-			ng-disabled="myform.$invalid">Add</button>
 		<button type="submit" class="btn"
-			ng-disabled="myform.$invalid">Login</button>
+			ng-disabled="myform.$invalid">Sign Up</button>
+		<a type="submit" class="altbtn"
+			ng-href="#/login">Login</a>
 	</form>
 </section>

@@ -7,7 +7,7 @@
 
 		<input type="email" name="email" placeholder="Email" autofocus
 			ng-model="user.email" ng-required="true">
-		<p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">Must be a valid email</p>
+		<p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">(Must be a valid email)</p>
 
 		<input type="password" name="password" placeholder="Password"
 			ng-model="user.password" ng-required="true">
@@ -15,6 +15,6 @@
 
 		<button type="submit" class="btn"
 			ng-disabled="myform.$invalid">Login</button>
-	</form>
 		<a class="altbtn" href="#/register">Register</a>
+	</form>
 </section>
