@@ -34,7 +34,7 @@ h1, p {
 }
 
 .login, .register {
-	width: 560px;
+	width: 380px;
 	max-width: 90%;
 	display: block;
 	margin: 0 auto;
@@ -51,19 +51,19 @@ input {
 	/*margin: 0 auto;*/
 	margin-bottom: 30px;
 	height: 25px;
-	padding: 8px 5px 8px 10px;
-	color: #e8244e;
+	padding: 8px 5px 8px 9px;
+	color: #19CEE9;
 	width: 400px;
 	max-width: 80%;
 	border: none;
 	border-bottom: 2px solid #cecece;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 input:focus {
 	outline-width: 0;
-	border-bottom: 2px solid #e8244e;
+	border-bottom: 2px solid #19CEE9;
 	background-color: rgba(231, 231, 231, 0.53);
-	color: #e8244e;
+	color: #19CEE9;
 	font-size: 1.5em;
 }
 
@@ -91,7 +91,7 @@ button:focus {
 }
 
 .btn:hover {
-	background-color: #25bcae;
+	background-color: #27c0f1;
 	border-bottom: 1px solid transparent;
 	cursor: pointer;
 }
@@ -140,7 +140,7 @@ a:hover {color: #c71f43;}
 	padding: 5px 3px 5px 3px;
 	text-align: center;
 	width: 409px;
-	max-width: 80%;
+	max-width: 82%;
 	display: block;
 	margin: 20px auto;
 	margin-top: -30px;
@@ -186,6 +186,8 @@ a:hover {color: #c71f43;}
 ______________________________*/
 .green {
 	border: 1px solid #26C281;
+	background-color: rgba(203, 246, 214, 0.25);
+
 }
 .green h3 {
 	background: #26C281;
@@ -197,6 +199,8 @@ ______________________________*/
 }
 .grellow {
 	border: 1px solid #D3E93A;
+	background-color: rgba(211, 233, 58, 0.25);
+
 }
 .grellow h3 {
 	background: #D3E93A;
@@ -208,6 +212,7 @@ ______________________________*/
 }
 .yellow {
 	border: 1px solid #FDD835;
+	background-color: rgba(251, 222, 86, 0.25);
 }
 .yellow h3 {
 	background: #FDD835;
@@ -219,6 +224,7 @@ ______________________________*/
 }
 .orange {
 	border: 1px solid #F9690E;
+	background-color: rgba(251, 150, 86, 0.25);
 }
 .orange h3 {
 	background: #F9690E;
@@ -230,6 +236,7 @@ ______________________________*/
 }
 .red {
 	border: 1px solid #DC3023;
+	background-color: rgba(251, 100, 86, 0.25);
 }
 .red h3 {
 	background: #DC3023;
@@ -241,6 +248,7 @@ ______________________________*/
 }
 .darkred {
 	border: 1px solid #8F1D21;
+	background-color: rgba(242, 160, 152, 0.25);
 }
 .darkred h3 {
 	background: #8F1D21;
@@ -252,6 +260,7 @@ ______________________________*/
 }
 .plain {
 	border: 1px solid #BDC3C7;
+	background-color: #f7f7f7;
 }
 .plain h3 {
 	background: #BDC3C7;
@@ -263,6 +272,7 @@ ______________________________*/
 }
 .unavailable {
 	border: 1px solid #6C7A89;
+	background-color: rgba(153, 137, 135, 0.1);	
 }
 .unavailable h3 {
 	background: #6C7A89;
@@ -347,6 +357,14 @@ ______________________________*/
 }
 .dashTitle #title-unavailable {
 	background-color: #a6a6a6;
+}
+
+#frame-plain {
+	border: 2px solid #c5c5c5;
+	background-color: rgba(153, 137, 135, 0.1);
+}
+.dashTitle #title-plain {
+	background-color: #c5c5c5;
 }
 
 .dashTitle {
@@ -488,12 +506,12 @@ ______________________________*/
 	position: relative;
 	float: left;
 	overflow: hidden;
-	width: 12.5%;
-	width: -webkit-calc(100% / 8);
-	width: calc(100% / 8);
+	width: 14.285%;
+	width: -webkit-calc(100% / 7);
+	width: calc(100% / 7);
 	text-align: center;
 	margin: 10px;
-	padding: 20px 5px 10px 5px;
+	padding: 20px 0 0 0;
 }
 
 .profilephoto {
@@ -550,12 +568,16 @@ ______________________________*/
 }
 
 .cbp-rfgrid li h3 {
-	width: 100%;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.4em;
-	text-align: center;
-	letter-spacing: 2px;
+  width: 100%;
+  height: 40px;
+  color: #FFF;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  padding-top: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 0;
 }
 
 /* Media Queries 
