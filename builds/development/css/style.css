@@ -148,33 +148,45 @@ a:hover {color: #c71f43;}
 
 .nav {
 	width: 100%;
-	background: rgba(161, 161, 161, 0.15);
+	border-bottom: 1px solid rgba(161, 161, 161, 0.15);
 	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 0;
 }
 
 .nav ul {
 	list-style-type: none;
 	margin: 0 auto;
 	text-align: center;
+	padding-left: 0;
 }
 
 .nav li {
 	display: inline-block;
-	margin: 10px 15px 10px 15px;
+	margin: 10px 15px 7px 15px;
+  position: relative;
 }
 
 .nav li a {
-	color: #19cee9;
-	font-size: 1.2em;
+  color: #19CEE9;
+  font-size: 1.2em;
+  border: 1px solid rgba(32, 196, 227, 0.39);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  padding: 10px;
 }
 
-.nav li a:hover {
-	border-bottom: 1px solid #e2fede;
-	color: #fe377a;
+.navparagraph {
+	color: rgba(32, 196, 227, 0.69);
+	margin-bottom: 0;
+	margin-top: 20px;
 }
 
 .brand a {
 	color: white;
+	border: none !important;
+	display: block;
 }
 
 #teamTitle {
@@ -533,7 +545,8 @@ ______________________________*/
 	text-align: center;
 	margin: 10px;
 	padding: 20px 0 0 0;
-	border-radius: 4px;
+	border-radius: 2px;
+	box-shadow: 4px 4px 4px #CDCDCD;
 }
 
 .profilephoto {

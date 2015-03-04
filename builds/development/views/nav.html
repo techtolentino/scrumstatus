@@ -1,8 +1,21 @@
-<div class="nav">
+<div class="nav" ng-controller="MembersController">
 	<ul>
-		<li class="brand"><a ng-href="#/">ScrumStatus</a></li>
-		<li><a ng-href="#/login">Login</a></li>
-		<li><a ng-href="#/register">Add</a></li>
-		<li><a ng-href="#/team">Team</a></li>
+		<li class="dripicon">
+			<a ng-href="#/login">&#xe071;</a>
+			<p class="navparagraph">LOG IN</p>
+		</li>
+		<li class="dripicon">
+			<a ng-href="#/register">&#xe065;</a>
+			<p class="navparagraph">REGISTER</p>
+		</li>
+		<li class="dripicon">
+			<a ng-href="#/team">&#xe082;</a>
+			<p class="navparagraph">TEAM</p>
+		</li>
+		<!-- Take to Dashboard -->
+		<li class="dripicon">
+			<a ng-href="#/">&#xe027;</a>
+			<p class="navparagraph">SETUP</p>
+		</li>
 	</ul>
 </div>
