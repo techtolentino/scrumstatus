@@ -3,9 +3,24 @@ myApp.controller('DashboardController',
 
 	var whichMember = $routeParams.uId;
 	var ref = new Firebase(FIREBASE_URL + 'members/' + whichMember);
-	var members = $firebase(ref);
+	var member = $firebase(ref);
 
-	$scope.member = members.$asObject();
+	$scope.member = member.$asObject();
 
+	$scope.dashUpdate = function() {
+		var updateObj = $firebase(ref);
+
+		var updateData = {
+			date: Firebase.ServerValue.TIMESTAMP,
+      color : $scope.color,
+      projectDescription : $scope.projectDescription
+		};
+
+		updateObj.$update(updateData).then(function($scope){
+			// send to Team page
+			alert('Thanks ' + $scope.firstname + ", your changes have been saved!");
+			$location.path('/team');
+		});
+	}
 
 });

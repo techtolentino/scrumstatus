@@ -42,7 +42,7 @@ h1, p {
 	margin-top: 7%;
 	background: rgba(255, 255, 255, 0.17);
 	color: #FFF;
-	border: 2px solid #2BD3C3;
+	border: 2px solid #19cee9;
 	border-radius: 3px;
 }
 
@@ -84,8 +84,8 @@ button:focus {
 }
 
 .btn {
-	border: 1px solid #2bd3c3;
-	background-color: #2bd3c3;
+	border: 1px solid #19cee9;
+	background-color: #19cee9;
 	color: #ffffff;
 	font-size: 1.2em;
 }
@@ -163,7 +163,7 @@ a:hover {color: #c71f43;}
 }
 
 .nav li a {
-	color: #2BD3C3;
+	color: #19cee9;
 	font-size: 1.2em;
 }
 
@@ -274,11 +274,11 @@ ______________________________*/
 
 /* Dashboard 
 ______________________________*/
-#edit {
+.edit {
 	width: 90%;
 	max-width: 600px;
 	height: auto;
-	border: 2px solid #2BD3C3;
+	border: 2px solid transparent;
 	display: block;
 	margin: 0 auto;
 	margin-top: 7%;
@@ -288,32 +288,105 @@ ______________________________*/
 	border-radius: 3px;
 }
 
+#frame-green {
+	border: 2px solid #26C281;
+	background-color: rgba(203, 246, 214, 0.25);
+}
+
+.dashTitle #title-green {
+	background-color: #26C281;
+}
+
+#frame-grellow {
+	border: 2px solid #D3E93A;
+	background-color: rgba(211, 233, 58, 0.25);
+}
+
+.dashTitle #title-grellow {
+	background-color: #D3E93A;
+}
+
+#frame-yellow {
+	border: 2px solid #FDD835;
+	background-color: rgba(251, 222, 86, 0.25);
+}
+
+.dashTitle #title-yellow {
+	background-color: #FDD835;
+}
+
+#frame-orange {
+	border: 2px solid #F9690E;
+	background-color: rgba(251, 150, 86, 0.25);
+}
+
+.dashTitle #title-orange {
+	background-color: #F9690E;
+}
+
+#frame-red {
+	border: 2px solid #DC3023;
+	background-color: rgba(251, 100, 86, 0.25);
+}
+.dashTitle #title-red {
+	background-color: #DC3023;
+}
+
+#frame-darkred {
+	border: 2px solid #8F1D21;
+	background-color: rgba(242, 160, 152, 0.25);
+}
+.dashTitle #title-darkred {
+	background-color: #8F1D21;
+}
+
+#frame-unavailable {
+	border: 2px solid #a6a6a6;
+	background-color: rgba(153, 137, 135, 0.1);
+}
+.dashTitle #title-unavailable {
+	background-color: #a6a6a6;
+}
+
 .dashTitle {
 	width: 100%;
 	height: auto;
 	color: #ffffff;
 	margin: 0 auto;
 	display: block;
-	/*padding-top: 15px;*/
 	padding-bottom: 15px;
 }
 
-.dashTitle h1, .register h1, .login h1{
-	font-size: 4em;
+.register h1, .login h1{
+	font-size: 2em;
 	margin-bottom: 5px;
 	margin-top: 0;
 	padding: 15px 0 15px 0;
-	background-color: #2BD3C3;
+	background-color: #19cee9;
 	color: white;
+}
+
+.dashTitle h1 {
+	background-color: #819fa6;
+	font-size: 2em;
+	margin-bottom: 5px;
+	margin-top: 0;
+	padding: 15px 0 15px 0;
+	color: white;
+}
+
+#frame- {
+	border: 2px solid #819fa6;
 }
 
 .dashTitle p, .register p, .login p{
 	margin-bottom: 50px;
+	font-size: 1.2em;
 }
 
 .dashimage img {
 	margin-bottom: 30px;
-	margin-top: 30px;
+	margin-top: 10px;
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;

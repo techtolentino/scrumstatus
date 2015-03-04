@@ -1,6 +1,6 @@
-<div id="edit" ng-controller="DashboardController">
+<div class="edit" id="frame-{{color}}">
 	<div class="dashTitle">
-		<h1>{{member.firstname}}</h1>
+		<h1 id="title-{{color}}">{{member.firstname}}</h1>
 	</div>
 	<div class="dashimage">
 		<img src="http://placehold.it/70x70">
@@ -10,33 +10,76 @@
 		novalidate>
 	
 	<div class="dashprojects">
-		<textarea name="projects" id="memberproject" placeholder="Enter your projects"></textarea>
+		<textarea 
+			name="projectDescription" 
+			id="memberproject" 
+			ng-model="projectDescription"
+			placeholder="{{member.projectDescription}}">
+			{{member.projectDescription}}
+		</textarea>
 	</div>
 	
 	<div class="radio-toolbar">
-		<input type="radio" id="radio1" name="radios" value="all" checked>
+		<input 
+			type="radio" 
+			id="radio1" 
+			name="radios" 
+			ng-model="color" 
+			value="green">
 	  <label for="radio1" id="greenRadio"></label>
 
-	  <input type="radio" id="radio2" name="radios"value="false">
+	  <input 
+	  	type="radio" 
+	  	id="radio2" 
+	  	name="radios" 
+	  	ng-model="color" 
+	  	value="grellow">
 	  <label for="radio2" id="grellowRadio"></label>
 
-	  <input type="radio" id="radio3" name="radios" value="true">
+	  <input 
+	  	type="radio" 
+	  	id="radio3" 
+	  	name="radios" 
+	  	ng-model="color" 
+	  	value="yellow">
 	  <label for="radio3" id="yellowRadio"></label>
 
-	  <input type="radio" id="radio4" name="radios" value="true">
+	  <input 
+	  	type="radio" 
+	  	id="radio4" 
+	  	name="radios" 
+	  	ng-model="color" 
+	  	value="orange">
 	  <label for="radio4" id="orangeRadio"></label>
 	  
-	  <input type="radio" id="radio5" name="radios" value="true">
+	  <input 
+	  	type="radio" 
+	  	id="radio5" 
+	  	name="radios" 
+	  	ng-model="color" 
+	  	value="red">
 	  <label for="radio5" id="redRadio"></label>
 	  
-	  <input type="radio" id="radio6" name="radios" value="true">
+	  <input 
+	  	type="radio" 
+	  	id="radio6" 
+	  	name="radios" 
+	  	ng-model="color" 
+	  	value="darkred">
 	  <label for="radio6" id="darkredRadio"></label>
 	  
-	  <input type="radio" id="radio7" name="radios" value="true">
+	  <input 
+	  	type="radio" 
+	  	id="radio7" 
+	  	name="radios" 
+	  	ng-model="color" 
+	  	value="unavailable">
 	  <label for="radio7" id="unavailableRadio"></label>
 	  
-		<a type="submit" class="btn" id="dashsubmit" ng-href="#/team">Update</a>
+		<button type="submit" class="btn" id="dashsubmit">Update</button>
 		<p>Return to <a ng-href="#/team">Team Page</a></p>
 	</div>
 	</form>
+<p>{{color}}</p>
 </div>
+
