@@ -47,8 +47,8 @@ h1, p {
 }
 
 input {
-	display: block;
-	margin: 0 auto;
+	/*display: block;*/
+	/*margin: 0 auto;*/
 	margin-bottom: 30px;
 	height: 25px;
 	padding: 8px 5px 8px 10px;
@@ -62,7 +62,7 @@ input {
 input:focus {
 	outline-width: 0;
 	border-bottom: 2px solid #e8244e;
-	background-color: rgba(243, 255, 179, 0.53);
+	background-color: rgba(231, 231, 231, 0.53);
 	color: #e8244e;
 	font-size: 1.5em;
 }
@@ -111,11 +111,14 @@ button:focus {
 	display: inline-block;
 }
 
-
 .altbtn:hover {
 	background-color: #e8244e;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.altbtn:focus {
+	outline-width: 0;	
 }
 
 .settings {
@@ -307,6 +310,8 @@ ______________________________*/
 .dashimage img {
 	margin-bottom: 30px;
 	border-radius: 50%;
+	width: 100px;
+	height: 100px;
 }
 
 
@@ -346,32 +351,34 @@ textarea#memberproject:focus {
 	outline-width: 0;
 }
 
-input[type="radio"] {
-	visibility: hidden;
-}
-
-.radioColors {
-	list-style-type: none;
-	display: block;
-	margin: 0 auto;
+.radio-toolbar {
 	margin-top: 30px;
-	margin-right: 30px;
-	padding-left: 25px;
 }
 
-.radioColors li {
-	display: inline-block;
-	width: 65px;
-	height: 25px;
-	padding: 5px;
-	margin: 5px;
-	text-align: center;
+.radio-toolbar input[type="radio"] {
+	display:none; 
 }
 
-label {
-	text-align: center;
-	vertical-align: middle;
-	vertical-align: -webkit-baseline-middle;
+.radio-toolbar label {
+  display:inline-block;
+  background-color:#ddd;
+  padding: 10px 10px;
+  width: 45px;
+  height: 10px;
+  margin: 5px;
+  font-size: 12px;
+  color: #000000;
+  opacity: .8;
+}
+
+.radio-toolbar label:hover {
+	cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked + label { 
+  opacity: 1;
+  color: white;
+	box-shadow: 0 3px 1px #888888;
 }
 
 #greenRadio {
@@ -391,6 +398,10 @@ label {
 }
 #darkredRadio {
 	background: #8F1D21;
+}
+
+#unavailable {
+	background: #6C7A89;
 }
 
 /* Full width responsive grid 
