@@ -24,6 +24,6 @@ myApp.config(['$routeProvider', function($routeProvider){
 			controller: 'MembersController'
 		}).
 		otherwise({
-			redirectTo: '/team'
+			redirectTo: '/login'
 		});
 }]);

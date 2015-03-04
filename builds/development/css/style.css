@@ -94,6 +94,22 @@ button:focus {
 	cursor: pointer;
 }
 
+.altbtn {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 90px;
+	background: #FFF;
+	color: #e8244e;
+	padding: 15px 0 15px 0;
+	font-size: 1.2em;
+	border: 1px solid #E8244E;
+	background-color: transparent;
+	color: #E8244E;
+	font-size: 1.2em;
+	display: inline-block;
+}
+
+
 .altbtn:hover {
 	background-color: #e8244e;
 	color: #ffffff;
