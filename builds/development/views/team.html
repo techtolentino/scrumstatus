@@ -3,7 +3,9 @@
 <ul class="cbp-rfgrid" ng-repeat="(key,member) in members">
 	<a ng-href="#/views/dashboard/{{key}}">
 		<li class="{{member.color}}">
-			<div class="dripicon profilephoto">&#xe084;</div>
+			<div class="dashimage">
+				<img src="{{member.image}}" id="homeProfile">
+			</div>
 			<div>
 				<h3>{{member.firstname}}</h3>
 			</div>

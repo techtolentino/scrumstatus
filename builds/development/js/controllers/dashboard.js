@@ -16,9 +16,9 @@ myApp.controller('DashboardController',
       projectDescription : $scope.projectDescription
 		};
 
-		updateObj.$update(updateData).then(function($scope){
+		updateObj.$update(updateData).then(function(){
 			// send to Team page
-			alert('Thanks ' + $scope.firstname + ", your changes have been saved!");
+			alert('Thanks ' + $scope.member.firstname + ", your changes have been saved!");
 			$location.path('/team');
 		});
 	}

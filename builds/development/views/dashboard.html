@@ -1,10 +1,12 @@
-<div class="edit" id="frame-{{color}}">
+<div class="edit" id="frame-{{member.color}}">
 	<div class="dashTitle">
-		<h1 id="title-{{color}}">{{member.firstname}}</h1>
+		<h1 id="title-{{member.color}}">{{member.firstname}}</h1>
 	</div>
+	<form name="imgform">
 	<div class="dashimage">
-		<img src="http://placehold.it/70x70">
+		<img src="{{member.image}}">
 	</div>
+	</form>
 	<form name="dashform"
 		ng-submit="dashUpdate()"
 		novalidate>
@@ -80,6 +82,5 @@
 		<p>Return to <a ng-href="#/team">Team Page</a></p>
 	</div>
 	</form>
-<p>{{color}}</p>
 </div>
 

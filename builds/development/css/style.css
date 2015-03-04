@@ -489,9 +489,30 @@ textarea#memberproject:focus {
 #darkredRadio {
 	background: #8F1D21;
 }
-
 #unavailable {
 	background: #6C7A89;
+}
+
+#greenRadio:hover {
+	opacity: 1;
+}
+#grellowRadio:hover {
+	opacity: 1;
+}
+#yellowRadio:hover {
+	opacity: 1;
+}
+#orangeRadio:hover {
+	opacity: 1;
+}
+#redRadio:hover {
+	opacity: 1;
+}
+#darkredRadio:hover {
+	opacity: 1;
+}
+#unavailable:hover {
+	opacity: 1;
 }
 
 /* Full width responsive grid 
@@ -512,16 +533,26 @@ ______________________________*/
 	text-align: center;
 	margin: 10px;
 	padding: 20px 0 0 0;
+	border-radius: 4px;
 }
 
 .profilephoto {
-	background: #FFF;
-	padding: 10px;
-	width: 60px;
-	border-radius: 50%;
-	font-size: 4em;
-	margin: 0 auto;
-	color: #a4a4a4;
+  background: #FFF;
+  /* padding: 10px; */
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  font-size: 4em;
+  margin: 0 auto;
+  color: #A4A4A4;
+  background-position: 146px 158px !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#homeProfile {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .actions {
@@ -572,9 +603,8 @@ ______________________________*/
   height: 40px;
   color: #FFF;
   margin-top: 10px;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  padding-top: 30px;
+  font-size: 1.8em;
+  padding-top: 20px;
   text-align: center;
   letter-spacing: 2px;
   margin-bottom: 0;
