@@ -17,6 +17,8 @@ body {
 
 main {
 	text-align: center;
+	margin-bottom: 70px;
+	overflow: hidden;
 }
 
 main h1 {
@@ -42,7 +44,7 @@ h1, p {
 	margin-top: 5%;
 	background: rgba(255, 255, 255, 0.17);
 	color: #FFF;
-	border: 2px solid #19cee9;
+	border: thin solid #19cee9;
 	border-radius: 3px;
 }
 
@@ -55,7 +57,7 @@ h1, p {
 	margin-top: 5%;
 	background: rgba(255, 255, 255, 0.17);
 	color: #FFF;
-	border: 2px solid #19cee9;
+	border: thin solid #19cee9;
 	border-radius: 3px;
 }
 
@@ -73,12 +75,12 @@ input {
 	width: 400px;
 	max-width: 80%;
 	border: none;
-	border-bottom: 2px solid #cecece;
+	border-bottom: thin solid #cecece;
 	font-size: 1.3em;
 }
 input:focus {
 	outline-width: 0;
-	border-bottom: 2px solid #19CEE9;
+	border-bottom: thin solid #19CEE9;
 	background-color: rgba(231, 231, 231, 0.53);
 	color: #19CEE9;
 	font-size: 1.5em;
@@ -318,7 +320,7 @@ ______________________________*/
 	width: 90%;
 	max-width: 600px;
 	height: auto;
-	border: 2px solid transparent;
+	border: thin solid transparent;
 	display: block;
 	margin: 0 auto;
 	margin-top: 5%;
@@ -329,7 +331,7 @@ ______________________________*/
 }
 
 #frame-green {
-	border: 2px solid #26C281;
+	border: thin solid #26C281;
 	background-color: rgba(203, 246, 214, 0.25);
 }
 
@@ -338,7 +340,7 @@ ______________________________*/
 }
 
 #frame-grellow {
-	border: 2px solid #D3E93A;
+	border: thin solid #D3E93A;
 	background-color: rgba(211, 233, 58, 0.25);
 }
 
@@ -347,7 +349,7 @@ ______________________________*/
 }
 
 #frame-yellow {
-	border: 2px solid #FDD835;
+	border: thin solid #FDD835;
 	background-color: rgba(251, 222, 86, 0.25);
 }
 
@@ -356,7 +358,7 @@ ______________________________*/
 }
 
 #frame-orange {
-	border: 2px solid #F9690E;
+	border: thin solid #F9690E;
 	background-color: rgba(251, 150, 86, 0.25);
 }
 
@@ -365,7 +367,7 @@ ______________________________*/
 }
 
 #frame-red {
-	border: 2px solid #DC3023;
+	border: thin solid #DC3023;
 	background-color: rgba(251, 100, 86, 0.25);
 }
 .dashTitle #title-red {
@@ -373,7 +375,7 @@ ______________________________*/
 }
 
 #frame-darkred {
-	border: 2px solid #8F1D21;
+	border: thin solid #8F1D21;
 	background-color: rgba(242, 160, 152, 0.25);
 }
 .dashTitle #title-darkred {
@@ -381,7 +383,7 @@ ______________________________*/
 }
 
 #frame-unavailable {
-	border: 2px solid #a6a6a6;
+	border: thin solid #a6a6a6;
 	background-color: rgba(153, 137, 135, 0.1);
 }
 .dashTitle #title-unavailable {
@@ -389,7 +391,7 @@ ______________________________*/
 }
 
 #frame-plain {
-	border: 2px solid #c5c5c5;
+	border: thin solid #c5c5c5;
 	background-color: rgba(153, 137, 135, 0.1);
 }
 .dashTitle #title-plain {
@@ -423,8 +425,12 @@ ______________________________*/
 	color: white;
 }
 
+.dashprojects {
+	margin-top: 15px;
+}
+
 #frame- {
-	border: 2px solid #819fa6;
+	border: thin solid #819fa6;
 }
 
 .dashTitle p, .register p, .login-left p{
@@ -432,25 +438,39 @@ ______________________________*/
 	font-size: 1.2em;
 }
 
-.dashimage img {
-	margin-bottom: 30px;
-	margin-top: 10px;
+.dashImageHome {
+  float: none;
+}
+
+.dashImageHome img {
+	/*margin-bottom: 10px;*/
+	/*margin-top: 10px;*/
 	border-radius: 50%;
 	width: 100px;
-	height: 100px;
+	/*height: 100px;*/
 }
 
-#dashsubmit {
-	display: block;
-	width: 163px;
+.dashimage {
+  display: block;
+  margin: 0 auto;
+}
+
+.dashimage img {
+	border-radius: 50%;
+	width: 100px;
+}
+
+.dashsubmit {
 	margin: 0 auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	padding: 15px 10px 15px 10px;
-	font-size: 1.3em;
+	width: 65px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+  padding: 5px 2px 5px 2px;
+  display: block;
 }
 
-#dashsubmit:hover {
+.dashsubmit:hover {
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -474,19 +494,24 @@ textarea#memberproject:focus {
 	margin-top: 30px;
 }
 
+#frame-green > p {
+	padding: 25px 0 5px 0;
+}
+
 .radio-toolbar input[type="radio"] {
 	display:none; 
 }
 
 .radio-toolbar label {
-  display:inline-block;
-  background-color:#ddd;
+  display: inline-block;
+  background-color: #DDD;
   padding: 10px 10px;
-  width: 45px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin: 5px;
+  border-radius: 50%;
   font-size: 12px;
-  color: #000000;
+  color: #000;
   opacity: .8;
 }
 
@@ -703,6 +728,12 @@ ______________________________*/
 		width: 27.027027%;
 		width: -webkit-calc(100% / 3.7);
 		width: calc(100% / 3.7);
+	}
+	.radio-toolbar label {
+	  width: 10px;
+	  height: 10px;
+	  margin: 3px;
+	  border-radius: 50%;
 	}
 }
 

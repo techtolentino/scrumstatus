@@ -7,20 +7,26 @@ myApp.controller('DashboardController',
 
 	$scope.member = member.$asObject();
 
-	$scope.dashUpdate = function() {
+	$scope.dashColorUpdate = function() {
 		var updateObj = $firebase(ref);
 
-		var updateData = {
+		var updateColor = {
 			date: Firebase.ServerValue.TIMESTAMP,
-      color : $scope.color,
+      color : $scope.color
+    };
+
+		updateObj.$update(updateColor);
+	}
+
+	$scope.dashProjectUpdate = function() {
+		var updateObj = $firebase(ref);
+
+		var updateProject = {
+			date: Firebase.ServerValue.TIMESTAMP,
       projectDescription : $scope.projectDescription
 		};
 
-		updateObj.$update(updateData).then(function(){
-			// send to Team page
-			alert('Thanks ' + $scope.member.firstname + ", your changes have been saved!");
-			$location.path('/team');
-		});
+		updateObj.$update(updateProject);
 	}
 
 });
