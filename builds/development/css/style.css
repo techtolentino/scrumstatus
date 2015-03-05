@@ -9,10 +9,8 @@ body {
 	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
 	background: white; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-color: #ffffff;
+	background-image: url(http://www.transparenttextures.com/patterns/green-dust-and-scratches.png);
 }
 
 main {
