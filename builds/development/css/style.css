@@ -44,10 +44,12 @@ h1, p {
 	margin: 0 auto;
 	border: 1px solid #FFF;
 	margin-top: 5%;
-	background: rgba(255, 255, 255, 0.17);
+	margin-bottom: 30px;
+	background: #ffffff;
 	color: #FFF;
-	border: thin solid #19cee9;
+	border: thin solid #195DE9;
 	border-radius: 3px;
+	box-shadow: 4px 4px 10px #CDCDCD;
 }
 
 .dripicon a:hover {
@@ -55,23 +57,21 @@ h1, p {
 }
 
 input {
-	/*display: block;*/
-	/*margin: 0 auto;*/
 	margin-bottom: 30px;
 	height: 25px;
 	padding: 8px 5px 8px 9px;
-	color: #19CEE9;
+	color: #195DE9;
 	width: 400px;
 	max-width: 80%;
 	border: none;
-	border-bottom: thin solid #cecece;
+	border-bottom: 2px solid #cecece;
 	font-size: 1.3em;
 }
 input:focus {
 	outline-width: 0;
-	border-bottom: thin solid #19CEE9;
+	border-bottom: 2px solid #195DE9;
 	background-color: rgba(231, 231, 231, 0.53);
-	color: #19CEE9;
+	color: #195DE9;
 	font-size: 1.5em;
 }
 
@@ -92,14 +92,14 @@ button:focus {
 }
 
 .btn {
-	border: 1px solid #19cee9;
-	background-color: #19cee9;
+	border: 1px solid #195DE9;
+	background-color: #195DE9;
 	color: #ffffff;
 	font-size: 1.2em;
 }
 
 .btn:hover {
-	background-color: #27c0f1;
+	background-color: #2277e9;
 	border-bottom: 1px solid transparent;
 	cursor: pointer;
 }
@@ -176,7 +176,7 @@ a:hover {color: #c71f43;}
 }
 
 .nav li a {
-  color: #19CEE9;
+  color: #195DE9;
   font-size: 1.2em;
   border: 1px solid rgba(32, 196, 227, 0.39);
   border-radius: 50%;
@@ -401,7 +401,7 @@ ______________________________*/
 	margin-bottom: 5px;
 	margin-top: 0;
 	padding: 25px 0 15px 0;
-	background-color: #19cee9;
+	background-color: #195DE9;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	color: white;
