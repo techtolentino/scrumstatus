@@ -40,22 +40,9 @@ h1, p {
 	margin: 0 auto;
 }
 
-.login-left, .register {
-	width: 380px;
+.login, .register {
+	width: 440px;
 	max-width: 90%;
-	margin: 0 auto;
-	border: 1px solid #FFF;
-	margin-top: 5%;
-	background: rgba(255, 255, 255, 0.17);
-	color: #FFF;
-	border: thin solid #19cee9;
-	border-radius: 3px;
-}
-
-.login-right {
-	width: 380px;
-	max-width: 90%;
-	display: inline-block;
 	margin: 0 auto;
 	border: 1px solid #FFF;
 	margin-top: 5%;
@@ -411,12 +398,14 @@ ______________________________*/
 	padding-bottom: 15px;
 }
 
-.register h1, .login-left h1{
+.register h1, .login h1{
 	font-size: 2em;
 	margin-bottom: 5px;
 	margin-top: 0;
-	padding: 15px 0 15px 0;
+	padding: 25px 0 15px 0;
 	background-color: #19cee9;
+	background-repeat: no-repeat;
+	background-size: 100%;
 	color: white;
 }
 
@@ -437,7 +426,7 @@ ______________________________*/
 	border: thin solid #819fa6;
 }
 
-.dashTitle p, .register p, .login-left p{
+.dashTitle p, .register p, .login p{
 	margin-bottom: 25px;
 	font-size: 1.2em;
 }
