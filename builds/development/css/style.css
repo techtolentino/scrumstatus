@@ -38,7 +38,6 @@ h1, p {
 .login-left, .register {
 	width: 380px;
 	max-width: 90%;
-	display: inline-block;
 	margin: 0 auto;
 	border: 1px solid #FFF;
 	margin-top: 5%;
@@ -609,18 +608,11 @@ ______________________________*/
 	margin-top: 0;
 	margin-bottom: 0;
 	box-shadow: 3px -3px 7px rgba(153, 153, 153, 0.49);
-	-webkit-filter: grayscale(0.9);
-  -webkit-filter: grayscale(90%);
-  filter: grayscale(90%);
-  filter: url(#greyscale);
-  filter: #aec7c2;
+	opacity: .7;
 }
 
 #homeProfile:hover {
-	-webkit-filter: grayscale(0);
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  filter: transparent;	
+	opacity: 1;
 }
 
 .greenBorder {
@@ -725,9 +717,9 @@ ______________________________*/
 
 @media screen and (max-width: 660px) {
 	.cbp-rfgrid li {
-		width: 27.027027%;
-		width: -webkit-calc(100% / 3.7);
-		width: calc(100% / 3.7);
+		width: 28.5714%;
+		width: -webkit-calc(100% / 3.5);
+		width: calc(100% / 3.5);
 	}
 	.radio-toolbar label {
 	  width: 10px;
@@ -739,10 +731,28 @@ ______________________________*/
 
 @media screen and (max-width: 476px) {
 	.cbp-rfgrid li {
-		width: 100%;
-		max-width: 300px;
-		margin: 0 auto;
-		margin-bottom: 10px;
-		float: none;
+    width: calc(100% / 3.5);
+	  margin: 0 auto;
+	  float: left;
+	  margin: 3px;
+	}
+	.dashImageHome img {
+	  /* margin-bottom: 10px; */
+	  /* margin-top: 10px; */
+	  border-radius: 50%;
+	  width: 70px;
+	  /* height: 100px; */
+	}
+	.cbp-rfgrid li h3 {
+	  width: 100%;
+	  height: 40px;
+	  color: #FFF;
+	  margin-top: 5px;
+	  font-size: 1.2em;
+	  padding-top: 15px;
+	  text-align: center;
+	  letter-spacing: 1px;
+	  margin-bottom: 0;
+	  padding-bottom: 0px;
 	}
 }

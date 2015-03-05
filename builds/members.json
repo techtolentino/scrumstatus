@@ -1,0 +1,144 @@
+{
+  "members" : {
+    "-JWT5y43YFsddfmGir" : {
+      "color" : "yellow",
+      "date" : 1425496069357,
+      "email" : "test@email.com",
+      "firstname" : "Amy",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/AmyMartin-Team.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO",
+      "yahoo" : "yahooIM"
+    },
+    "-JWT5y43YFy1mGirVVS2" : {
+      "color" : "red",
+      "date" : 1410328158691,
+      "email" : "test@email.com",
+      "firstname" : "Adam",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/AdamKaye-Team.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO",
+      "yahoo" : "yahooIM"
+    },
+    "-JWT5yadfdfesfeirV" : {
+      "color" : "orange",
+      "date" : 1425556213206,
+      "email" : "test@email.com",
+      "firstname" : "Brent",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/11/Brent-Swaine-Pix-Copy-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO",
+      "yahoo" : "yahooIM"
+    },
+    "-JWT65QvjwD4TSFjDx4V" : {
+      "color" : "darkred",
+      "date" : 1425555725694,
+      "email" : "test@email.com",
+      "firstname" : "Anne",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2013/08/AnneGoetzWorkFeature-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JWT65QvjwD4TSjwadfd" : {
+      "color" : "darkred",
+      "date" : 1410328192928,
+      "email" : "test@email.com",
+      "firstname" : "Brenda",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/BrendaMiele-Team.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JWT65QvjwDjwadfea4V" : {
+      "color" : "green",
+      "date" : 1410328192928,
+      "email" : "test@email.com",
+      "firstname" : "Chris",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/02/chris-pix-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JWT65QvjwadfeaFjDx4" : {
+      "color" : "yellow",
+      "date" : 1410328192928,
+      "email" : "test@email.com",
+      "firstname" : "Gerardo",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/GL-Pix-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JWjwadfeaD4TSFjDx4V" : {
+      "color" : "grellow",
+      "date" : 1410328192928,
+      "email" : "test@email.com",
+      "firstname" : "Joel",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/01/joel-work-feature-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JWk3R8ejXlaOVBr7hxd" : {
+      "color" : "green",
+      "date" : 1410629485228,
+      "email" : "test@email.com",
+      "firstname" : "Lilli",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/09/Lilli-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JX0jlHRCfiI6DiDnySn" : {
+      "color" : "orange",
+      "date" : 1425508669374,
+      "email" : "test@email.com",
+      "firstname" : "Nick",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2013/08/Nick_Workcloseup-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JX0jlHRCfidafee23yS" : {
+      "color" : "green",
+      "date" : 1425554856910,
+      "email" : "test@email.com",
+      "firstname" : "Randy",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/09/RT-Pix-Copy-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JjKCVrvCueODJp6iT2Z" : {
+      "color" : "orange",
+      "date" : 1425211264533,
+      "email" : "enter@youremail.com",
+      "firstname" : "Josh",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/08/Josh-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JjOvSU4JolOhtLHZDZV" : {
+      "color" : "grellow",
+      "date" : 1425508608149,
+      "email" : "enter@youremail.com",
+      "firstname" : "Wes",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/WesGabbard-Team.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    },
+    "-JjQGcktQW63LY_hjpTi" : {
+      "color" : "red",
+      "date" : 1425508622756,
+      "email" : "enter@youremail.com",
+      "firstname" : "Will",
+      "image" : "http://www.charitydynamics.com/wp-content/uploads/2013/10/Will_Work_feature-167x174.jpg",
+      "projectDescription" : "Currently working on ...",
+      "upcoming" : "PTO / WFH / OOO ",
+      "yahoo" : "yahooIM"
+    }
+  }
+}
