@@ -1,14 +1,16 @@
 <div class="edit" id="frame-{{member.color}}">
-	<div class="dashTitle">
-		<h1 id="title-{{member.color}}">{{member.firstname}}</h1>
-	</div>
+	<div id="title-{{member.color}}" class="dashTitle"></div>
 	<div class="dashimage">
-		<img src="{{member.image}}" id="frame-{{member.color}}">
+		<img ng-src="{{member.image}}" id="frame-{{member.color}}">
+	</div>
+	<div class="dashInfo">
+		<p><span class="dripicon dashicon">&#xe048; </span>{{member.email}}</p>
+		<p><span class="dripicon dashicon">&#xe023; </span>{{member.yahoo}}</p>
+		<p><span class="dripicon dashicon">&#xe043; </span>{{member.upcoming}}</p>
 	</div>
 	
 	<form name="dashColorForm"
 		id="dashColorForm"
-		ng-submit="dashColorUpdate()"
 		novalidate>
 		<div class="radio-toolbar">
 			<input 
@@ -16,6 +18,7 @@
 				id="radio1" 
 				name="radios" 
 				ng-model="color" 
+				ng-change="colorChange(color)"
 				value="green">
 		  <label for="radio1" id="greenRadio"></label>
 
@@ -24,6 +27,7 @@
 		  	id="radio2" 
 		  	name="radios" 
 		  	ng-model="color" 
+		  	ng-change="colorChange(color)"
 		  	value="grellow">
 		  <label for="radio2" id="grellowRadio"></label>
 
@@ -32,6 +36,7 @@
 		  	id="radio3" 
 		  	name="radios" 
 		  	ng-model="color" 
+		  	ng-change="colorChange(color)"
 		  	value="yellow">
 		  <label for="radio3" id="yellowRadio"></label>
 
@@ -40,6 +45,7 @@
 		  	id="radio4" 
 		  	name="radios" 
 		  	ng-model="color" 
+		  	ng-change="colorChange(color)"
 		  	value="orange">
 		  <label for="radio4" id="orangeRadio"></label>
 		  
@@ -48,6 +54,7 @@
 		  	id="radio5" 
 		  	name="radios" 
 		  	ng-model="color" 
+		  	ng-change="colorChange(color)"
 		  	value="red">
 		  <label for="radio5" id="redRadio"></label>
 		  
@@ -56,6 +63,7 @@
 		  	id="radio6" 
 		  	name="radios" 
 		  	ng-model="color" 
+		  	ng-change="colorChange(color)"
 		  	value="darkred">
 		  <label for="radio6" id="darkredRadio"></label>
 		  
@@ -64,27 +72,25 @@
 		  	id="radio7" 
 		  	name="radios" 
 		  	ng-model="color" 
+		  	ng-change="colorChange(color)"
 		  	value="unavailable">
 		  <label for="radio7" id="unavailableRadio"></label>
 		  
-			<button type="submit" class="btn dashsubmit">Save</button>
 		</div>
 	</form>
 
 	<form name="dashProjectForm"
 		id="projectForm"
-		ng-submit="dashProjectUpdate()"
 		novalidate>
 		<div class="dashprojects">
 			<textarea 
 				name="projectDescription" 
 				id="memberproject" 
 				ng-model="projectDescription"
+				ng-change="dashProjectUpdate(projectDescription)"
 				placeholder="{{member.projectDescription}}">{{member.projectDescription}}
 			</textarea>
-			<button type="submit" id="projectSubmit" class="btn dashsubmit">Save</button>
 		</div>
 	</form>
-	<p><a ng-href="#/team">Return to Team Page</a></p>
+	<p><a class="btn dashsubmit" ng-href="#/team">Team Page</a></p>
 </div>
-

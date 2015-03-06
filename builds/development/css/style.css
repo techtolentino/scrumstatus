@@ -319,12 +319,32 @@ ______________________________*/
 	border-radius: 3px;
 }
 
+.dashicon {
+	font-family: dripicons;
+	font-size: 1.3em;
+	color: #2062E6;
+	margin-right: 10px;
+}
+
+.dashInfo {
+	display: block;
+	text-align: left;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.dashInfo p {
+	margin-left: 30px;
+}
+
 #frame-green {
 	border: thin solid #26C281;
 	background-color: rgba(203, 246, 214, 0.25);
 }
 
-.dashTitle #title-green {
+#title-green {
+	margin-top: 0;
+	height: 60px;
 	background-color: #26C281;
 }
 
@@ -333,7 +353,9 @@ ______________________________*/
 	background-color: rgba(211, 233, 58, 0.25);
 }
 
-.dashTitle #title-grellow {
+#title-grellow {
+	margin-top: 0;
+	height: 60px;
 	background-color: #D3E93A;
 }
 
@@ -342,7 +364,9 @@ ______________________________*/
 	background-color: rgba(251, 222, 86, 0.25);
 }
 
-.dashTitle #title-yellow {
+#title-yellow {
+	margin-top: 0;
+	height: 60px;
 	background-color: #FDD835;
 }
 
@@ -351,7 +375,9 @@ ______________________________*/
 	background-color: rgba(251, 150, 86, 0.25);
 }
 
-.dashTitle #title-orange {
+#title-orange {
+	margin-top: 0;
+	height: 60px;
 	background-color: #F9690E;
 }
 
@@ -359,7 +385,9 @@ ______________________________*/
 	border: thin solid #DC3023;
 	background-color: rgba(251, 100, 86, 0.25);
 }
-.dashTitle #title-red {
+#title-red {
+	margin-top: 0;
+	height: 60px;
 	background-color: #DC3023;
 }
 
@@ -367,7 +395,9 @@ ______________________________*/
 	border: thin solid #8F1D21;
 	background-color: rgba(242, 160, 152, 0.25);
 }
-.dashTitle #title-darkred {
+#title-darkred {
+	margin-top: 0;
+	height: 60px;
 	background-color: #8F1D21;
 }
 
@@ -375,7 +405,9 @@ ______________________________*/
 	border: thin solid #a6a6a6;
 	background-color: rgba(153, 137, 135, 0.1);
 }
-.dashTitle #title-unavailable {
+#title-unavailable {
+	margin-top: 0;
+	height: 60px;
 	background-color: #a6a6a6;
 }
 
@@ -383,7 +415,9 @@ ______________________________*/
 	border: thin solid #c5c5c5;
 	background-color: rgba(153, 137, 135, 0.1);
 }
-.dashTitle #title-plain {
+#title-plain {
+	margin-top: 0;
+	height: 60px;
 	background-color: #c5c5c5;
 }
 
@@ -404,15 +438,6 @@ ______________________________*/
 	background-color: #195DE9;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	color: white;
-}
-
-.dashTitle h1 {
-	background-color: #819fa6;
-	font-size: 2em;
-	margin-bottom: 5px;
-	margin-top: 0;
-	padding: 15px 0 15px 0;
 	color: white;
 }
 
@@ -444,11 +469,15 @@ ______________________________*/
 .dashimage {
   display: block;
   margin: 0 auto;
+  margin-top: -50px;
+  /*border: 1px solid red;*/
+  text-align: left;
+  padding-left: 6%;
 }
 
 .dashimage img {
 	border-radius: 50%;
-	width: 100px;
+	width: 75px;
 }
 
 .dashsubmit {
@@ -504,6 +533,7 @@ textarea#memberproject:focus {
   font-size: 12px;
   color: #000;
   opacity: .8;
+  border: 1px solid rgba(109, 109, 109, 0.71);
 }
 
 .radio-toolbar label:hover {
@@ -701,22 +731,14 @@ ______________________________*/
 
 @media screen and (max-width: 660px) {
 	.cbp-rfgrid li {
-		width: 33.3333333%;
-		width: -webkit-calc(100% / 3);
-		width: calc(100% / 3);
-	}
-}
-
-@media screen and (max-width: 660px) {
-	.cbp-rfgrid li {
 		width: 28.5714%;
 		width: -webkit-calc(100% / 3.5);
 		width: calc(100% / 3.5);
 	}
 	.radio-toolbar label {
-	  width: 10px;
-	  height: 10px;
-	  margin: 3px;
+	  width: 3px;
+	  height: 3px;
+	  margin: 5px;
 	  border-radius: 50%;
 	}
 }
@@ -727,6 +749,7 @@ ______________________________*/
 	  margin: 0 auto;
 	  float: left;
 	  margin: 3px;
+	  margin-left: 7px;
 	}
 	.dashImageHome img {
 	  /* margin-bottom: 10px; */

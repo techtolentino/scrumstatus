@@ -7,7 +7,7 @@ myApp.controller('DashboardController',
 
 	$scope.member = member.$asObject();
 
-	$scope.dashColorUpdate = function() {
+	$scope.colorChange = function() {
 		var updateObj = $firebase(ref);
 
 		var updateColor = {
