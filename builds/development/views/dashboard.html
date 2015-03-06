@@ -1,12 +1,9 @@
 <div class="edit" id="frame-{{member.color}}">
-	<div id="title-{{member.color}}" class="dashTitle"></div>
+	<div id="title-{{member.color}}" class="dashTitle">
+		<p>{{member.email}} | {{member.yahoo}}</p>
+	</div>
 	<div class="dashimage">
 		<img ng-src="{{member.image}}" id="frame-{{member.color}}">
-	</div>
-	<div class="dashInfo">
-		<p><span class="dripicon dashicon">&#xe048; </span>{{member.email}}</p>
-		<p><span class="dripicon dashicon">&#xe023; </span>{{member.yahoo}}</p>
-		<p><span class="dripicon dashicon">&#xe043; </span>{{member.upcoming}}</p>
 	</div>
 	
 	<form name="dashColorForm"
@@ -92,5 +89,5 @@
 			</textarea>
 		</div>
 	</form>
-	<p><a class="btn dashsubmit" ng-href="#/team">Team Page</a></p>
+	<p><a class="btn dashsubmit" ng-href="#/team">Go Back</a></p>
 </div>

@@ -326,17 +326,6 @@ ______________________________*/
 	margin-right: 10px;
 }
 
-.dashInfo {
-	display: block;
-	text-align: left;
-	margin: 0 auto;
-	width: 200px;
-}
-
-.dashInfo p {
-	margin-left: 30px;
-}
-
 #frame-green {
 	border: thin solid #26C281;
 	background-color: rgba(203, 246, 214, 0.25);
@@ -344,7 +333,6 @@ ______________________________*/
 
 #title-green {
 	margin-top: 0;
-	height: 60px;
 	background-color: #26C281;
 }
 
@@ -355,7 +343,6 @@ ______________________________*/
 
 #title-grellow {
 	margin-top: 0;
-	height: 60px;
 	background-color: #D3E93A;
 }
 
@@ -366,7 +353,6 @@ ______________________________*/
 
 #title-yellow {
 	margin-top: 0;
-	height: 60px;
 	background-color: #FDD835;
 }
 
@@ -377,7 +363,6 @@ ______________________________*/
 
 #title-orange {
 	margin-top: 0;
-	height: 60px;
 	background-color: #F9690E;
 }
 
@@ -387,7 +372,6 @@ ______________________________*/
 }
 #title-red {
 	margin-top: 0;
-	height: 60px;
 	background-color: #DC3023;
 }
 
@@ -397,7 +381,6 @@ ______________________________*/
 }
 #title-darkred {
 	margin-top: 0;
-	height: 60px;
 	background-color: #8F1D21;
 }
 
@@ -407,7 +390,6 @@ ______________________________*/
 }
 #title-unavailable {
 	margin-top: 0;
-	height: 60px;
 	background-color: #a6a6a6;
 }
 
@@ -417,17 +399,16 @@ ______________________________*/
 }
 #title-plain {
 	margin-top: 0;
-	height: 60px;
 	background-color: #c5c5c5;
 }
 
 .dashTitle {
 	width: 100%;
-	height: auto;
+	height: 40px;
 	color: #ffffff;
 	margin: 0 auto;
 	display: block;
-	padding-bottom: 15px;
+	padding-top: 20px;
 }
 
 .register h1, .login h1{
@@ -449,9 +430,18 @@ ______________________________*/
 	border: thin solid #819fa6;
 }
 
-.dashTitle p, .register p, .login p{
+.register p, .login p{
 	margin-bottom: 25px;
 	font-size: 1.2em;
+}
+
+.dashTitle p {
+  color: #FFF;
+  text-align: right;
+  margin: 0;
+  margin-right: 40px;
+  font-size: 1.2em;
+  margin-top: 15px;
 }
 
 .dashImageHome {
@@ -469,7 +459,7 @@ ______________________________*/
 .dashimage {
   display: block;
   margin: 0 auto;
-  margin-top: -50px;
+  margin-top: -45px;
   /*border: 1px solid red;*/
   text-align: left;
   padding-left: 6%;
@@ -477,16 +467,26 @@ ______________________________*/
 
 .dashimage img {
 	border-radius: 50%;
-	width: 75px;
+	width: 85px;
+}
+
+#userEmail {
+	background: rgba(0, 0, 0, 0);
+  color: #FFF;
+  border-bottom: none;
+  text-align: right;
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
 }
 
 .dashsubmit {
-	margin: 0 auto;
-	width: 65px;
+  margin: 0 auto;
+  width: 65px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 0.8em;
-  padding: 5px 2px 5px 2px;
+  font-size: 1.2em;
+  padding: 10px 20px 10px 20px;
   display: block;
 }
 
@@ -721,7 +721,7 @@ ______________________________*/
 /* Media Queries 
 ______________________________*/
 
-@media screen and (max-width: 945px) {
+@media all and (max-width: 945px) {
 	.cbp-rfgrid li {
 		width: 28.571428%;
 		width: -webkit-calc(100% / 3.5);
@@ -729,7 +729,16 @@ ______________________________*/
 	}
 }
 
-@media screen and (max-width: 660px) {
+@media all and (max-width: 768px) {
+	.cbp-rfgrid {
+	  list-style: outside none none;
+	  padding: 0;
+	  position: relative;
+	  width: 100%;
+	}
+}
+
+@media all and (max-width: 660px) {
 	.cbp-rfgrid li {
 		width: 28.5714%;
 		width: -webkit-calc(100% / 3.5);
@@ -743,7 +752,7 @@ ______________________________*/
 	}
 }
 
-@media screen and (max-width: 476px) {
+@media all and (max-width: 476px) {
 	.cbp-rfgrid li {
     width: calc(100% / 3.5);
 	  margin: 0 auto;
@@ -752,11 +761,9 @@ ______________________________*/
 	  margin-left: 7px;
 	}
 	.dashImageHome img {
-	  /* margin-bottom: 10px; */
-	  /* margin-top: 10px; */
-	  border-radius: 50%;
-	  width: 70px;
-	  /* height: 100px; */
+		border-radius: 50%;
+	  width: 50px;
+	  margin-top: 15px;
 	}
 	.cbp-rfgrid li h3 {
 	  width: 100%;
@@ -769,5 +776,42 @@ ______________________________*/
 	  letter-spacing: 1px;
 	  margin-bottom: 0;
 	  padding-bottom: 0px;
+	}
+}
+
+@media all and (max-width: 321px) {
+	.cbp-rfgrid li {
+    width: calc(100% / 3.5);
+	  margin: 0 auto;
+	  float: left;
+	  margin: 3px;
+	  margin-left: 7px;
+	}
+	.dashImageHome img {
+		border-radius: 50%;
+	  width: 50px;
+	  margin-top: 15px;
+	}
+
+	.dashimage img {
+		width: 65px;
+	}
+	.dashTitle p {
+		font-size: 0.9em;
+	}
+	.cbp-rfgrid li h3 {
+	  width: 100%;
+	  height: 40px;
+	  color: #FFF;
+	  margin-top: 5px;
+	  font-size: 1.2em;
+	  padding-top: 15px;
+	  text-align: center;
+	  letter-spacing: 1px;
+	  margin-bottom: 0;
+	  padding-bottom: 0px;
+	}
+	textarea#memberproject {
+    font-size: 1em;
 	}
 }
