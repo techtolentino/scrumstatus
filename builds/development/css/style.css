@@ -144,7 +144,7 @@ a:hover {color: #c71f43;}
 	color: #FFFFFF;
 	font-size: 14px;
 	font-style: italic;
-	background-color: rgba(177, 177, 177, 0.72);
+	background-color: rgba(234, 23, 63, 0.73);
 	padding: 5px 3px 5px 3px;
 	text-align: center;
 	width: 409px;
@@ -432,7 +432,7 @@ ______________________________*/
 
 .register p, .login p{
 	margin-bottom: 25px;
-	font-size: 1.2em;
+	/*font-size: 1.2em;*/
 }
 
 .dashTitle p {
@@ -468,6 +468,11 @@ ______________________________*/
 .dashimage img {
 	border-radius: 50%;
 	width: 85px;
+}
+
+.userInfo {
+	float: right;
+	margin-right: 30px;
 }
 
 #userEmail {
@@ -512,10 +517,6 @@ textarea#memberproject:focus {
 
 .radio-toolbar {
 	margin-top: 30px;
-}
-
-#frame-green > p {
-	padding: 25px 0 5px 0;
 }
 
 .radio-toolbar input[type="radio"] {

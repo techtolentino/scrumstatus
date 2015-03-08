@@ -1,12 +1,17 @@
 // User Registration Controller
-myApp.controller('RegistrationController', function($scope, $location){
+myApp.controller('RegistrationController', 
+	function($scope, $firebaseSimpleLogin, $location, FIREBASE_URL, Authentication){
 
-	$scope.login = function(){
-		$location.path('/team');
-	} //login
+		var ref = new Firebase(FIREBASE_URL);
 
-	$scope.register = function(){
-		$location.path('/team');
-	} //register
+		var simpleLogin = $firebaseSimpleLogin(ref);
 
+		$scope.login = function() {
+			Authentication.login($scope.user)
+			.then(function(user) {
+				$location.path('/team');
+			}, function(error){
+				$scope.message = error.toString();
+			});
+		} //login
 });

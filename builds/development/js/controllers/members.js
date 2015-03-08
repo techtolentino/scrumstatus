@@ -12,7 +12,7 @@ myApp.controller('MembersController', function($scope, $firebase, $location, FIR
       image : "http://telehealth.org/wp-content/images/user-placeholder.jpg",
       color : "plain",
       projectDescription : "Currently working on...",
-      email: "enter@youremail.com",
+      email: $scope.email,
       yahoo : "yahooIM",
       upcoming : "PTO / WFH / OOO"
 		}).then(function(){
