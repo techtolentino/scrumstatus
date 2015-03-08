@@ -14,4 +14,14 @@ myApp.controller('RegistrationController',
 				$scope.message = error.toString();
 			});
 		} //login
+
+		$scope.register = function() {
+			Authentication.register($scope.user)
+			.then(function(user) {
+				Authentication.login($scope.user);
+				$location.path('/team');
+			}, function(error){
+				$scope.message = error.toString();
+			});
+		} //login
 });
