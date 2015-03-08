@@ -1,12 +1,19 @@
-<ul class="cbp-rfgrid" ng-repeat="(key,member) in members">
-	<a ng-href="#/views/dashboard/{{key}}">
-		<li class="{{member.color}}">
-			<div class="dashImageHome">
-				<img ng-src="{{member.image}}" class="{{member.color}}Border" id="homeProfile">
-			</div>
-			<div>
-				<h3>{{member.firstname}}</h3>
-			</div>
-		</li>
-	</a>
-</ul>
+<div class="sorry"
+	ng-hide="signedIn()">
+	<p>Sorry, only registered users can access the team.</p>
+</div>
+
+<div ng-show="signedIn()">
+	<ul class="cbp-rfgrid" ng-repeat="(key,member) in members">
+		<a ng-href="#/views/dashboard/{{key}}">
+			<li class="{{member.color}}">
+				<div class="dashImageHome">
+					<img ng-src="{{member.image}}" class="{{member.color}}Border" id="homeProfile">
+				</div>
+				<div>
+					<h3>{{member.firstname}}</h3>
+				</div>
+			</li>
+		</a>
+	</ul>
+</div>
