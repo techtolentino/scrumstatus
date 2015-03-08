@@ -1,9 +1,8 @@
 myApp.controller('DashboardController', 
 	function($scope, $firebase, $routeParams, $location, FIREBASE_URL){
 
-	var whichTeam = $routeParams.uId;
-	var whichMember = $routeParams.mId;
-	var ref = new Firebase(FIREBASE_URL + 'users/' + '/' + whichTeam + '/' + whichMember);
+	var whichMember = $routeParams.uId;
+	var ref = new Firebase(FIREBASE_URL + 'users/' + '/' + whichMember);
 	var member = $firebase(ref);
 
 	$scope.member = member.$asObject();
