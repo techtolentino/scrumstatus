@@ -5,7 +5,7 @@
 
 <div ng-show="signedIn()">
 	<ul class="cbp-rfgrid" ng-repeat="(key,member) in members">
-		<a ng-href="#/views/dashboard/{{key}}">
+		<a ng-href="#/views/dashboard/{{key}}/{{member.firstname}}">
 			<li class="{{member.color}}">
 				<div class="dashImageHome">
 					<img ng-src="{{member.image}}" class="{{member.color}}Border" id="homeProfile">
@@ -17,3 +17,5 @@
 		</a>
 	</ul>
 </div>
+
+<!-- http://localhost:8000/#/views/dashboard/simplelogin:6/ -->

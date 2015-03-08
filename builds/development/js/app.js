@@ -15,7 +15,7 @@ myApp.config(['$routeProvider', function($routeProvider){
 			templateUrl: 'views/team.html',
 			controller: 'MembersController'
 		}).
-		when('/views/dashboard/:uId', {
+		when('/views/dashboard/:uId/:mId', {
 			templateUrl: 'views/dashboard.html',
 			controller: 'DashboardController'
 		}).

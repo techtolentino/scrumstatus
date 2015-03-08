@@ -31,8 +31,12 @@ myApp.factory('Authentication', function($firebase,
           date: Firebase.ServerValue.TIMESTAMP,
           regUser: regUser.uid,
           firstname: user.firstname,
-          lastname: user.lastname,
-          email: user.email
+          email: user.email,
+		      image : "http://telehealth.org/wp-content/images/user-placeholder.jpg",
+		      color : "plain",
+		      projectDescription : "Currently working on...",
+		      yahoo : "yahooIM",
+		      upcoming : "PTO / WFH / OOO"
         }
 
         firebaseUsers.$set(regUser.uid, userInfo);
