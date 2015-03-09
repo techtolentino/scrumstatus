@@ -85,8 +85,8 @@ button {
 	width: 163px;
 	margin: 30px 5px 20px 5px;
 	background: #FFF;
-	border: 1px solid #e8244e;
-	color: #e8244e;
+	border: 1px solid #24E8DF;
+	color: #24E8DF;
 	padding: 15px 0 15px 0;
 	font-size: 1.2em;
 }
@@ -113,18 +113,18 @@ button:focus {
 	margin-bottom: 20px;
 	width: 160px;
 	background: #FFF;
-	color: #e8244e;
+	color: #24E8DF;
 	padding: 15px 0 15px 0;
 	font-size: 1.2em;
-	border: 1px solid #E8244E;
+	border: 1px solid #24E8DF;
 	background-color: transparent;
-	color: #E8244E;
+	color: #24E8DF;
 	font-size: 1.2em;
 	display: inline-block;
 }
 
 .altbtn:hover {
-	background-color: #e8244e;
+	background-color: #24E8DF;
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -142,13 +142,13 @@ button:focus {
 	padding: 5px;
 }
 
-a {text-decoration: none; color: #E8244E;}
+a {text-decoration: none; color: #24E8DF;}
 a:hover {color: #c71f43;}
 .error {
-	color: #FFFFFF;
+	color: #135643;
 	font-size: 14px;
 	font-style: italic;
-	background-color: rgba(234, 23, 63, 0.73);
+	background-color: rgba(23, 234, 190, 0.39);
 	padding: 5px 3px 5px 3px;
 	text-align: center;
 	width: 409px;
