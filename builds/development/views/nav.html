@@ -1,19 +1,19 @@
 <div class="nav" ng-controller="MembersController">
 	<ul>
-		<li class="dripicon" ng-hide="userEmail">
+		<li class="dripicon" ng-hide="currentUser">
 			<a ng-href="#/login">&#xe071;</a>
 			<p class="navparagraph">LOG IN</p>
 		</li>
-		<li class="dripicon" ng-hide="userEmail">
+		<li class="dripicon" ng-hide="currentUser">
 			<a ng-href="#/register">&#xe065;</a>
-			<p class="navparagraph">REGISTER</p>
+			<p class="navparagraph">ADD</p>
 		</li>
-		<li class="dripicon" ng-show="userEmail">
+		<li class="dripicon">
 			<a ng-href="#/team" >&#xe082;</a>
 			<p class="navparagraph">TEAM</p>
 		</li>
 		<!-- Take to Dashboard -->
-		<li class="dripicon" ng-show="userEmail">
+		<li class="dripicon">
 			<a ng-click="logout()">&#xe012;</a>
 			<p class="navparagraph">LOGOUT</p>
 		</li>

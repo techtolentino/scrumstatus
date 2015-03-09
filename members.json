@@ -1,6 +1,6 @@
 {
-  "members" : {
-    "-JWT5y43YFy1mGirVVS2" : {
+  "users" : {
+    "simplelogin:1" : {
       "date" : 1410328158691,
       "firstname" : "Adam",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/AdamKaye-Team.jpg",
@@ -9,7 +9,8 @@
       "email": "test@email.com",
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO"
-    },"-JWT5y43YFsddfmGir" : {
+    },
+    "simplelogin:2" : {
       "date" : 1410328158691,
       "firstname" : "Amy",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/AmyMartin-Team.jpg",
@@ -18,7 +19,8 @@
       "email": "test@email.com",
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO"
-    },"-JWT5yadfdfesfeirV" : {
+    },
+    "simplelogin:3" : {
       "date" : 1410328158691,
       "firstname" : "Brent",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/11/Brent-Swaine-Pix-Copy-167x174.jpg",
@@ -28,7 +30,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO"
     },
-    "-JWT65QvjwD4TSFjDx4V" : {
+    "simplelogin:4" : {
       "date" : 1410328192928,
       "firstname" : "Anne",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2013/08/AnneGoetzWorkFeature-167x174.jpg",
@@ -38,7 +40,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JWT65QvjwD4TSjwadfd" : {
+    "simplelogin:5" : {
       "date" : 1410328192928,
       "firstname" : "Brenda",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/BrendaMiele-Team.jpg",
@@ -48,7 +50,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JWT65QvjwDjwadfea4V" : {
+    "simplelogin:6" : {
       "date" : 1410328192928,
       "firstname" : "Chris",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/02/chris-pix-167x174.jpg",
@@ -58,7 +60,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JWT65QvjwadfeaFjDx4" : {
+    "simplelogin:7" : {
       "date" : 1410328192928,
       "firstname" : "Gerardo",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/GL-Pix-167x174.jpg",
@@ -68,7 +70,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JWjwadfeaD4TSFjDx4V" : {
+    "simplelogin:8" : {
       "date" : 1410328192928,
       "firstname" : "Joel",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/01/joel-work-feature-167x174.jpg",
@@ -78,7 +80,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JWk3R8ejXlaOVBr7hxd" : {
+    "simplelogin:9" : {
       "date" : 1410629485228,
       "firstname" : "Lilli",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/09/Lilli-167x174.jpg",
@@ -88,7 +90,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JX0jlHRCfiI6DiDnySn" : {
+    "simplelogin:10" : {
       "date" : 1410926056676,
       "firstname" : "Nick",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2013/08/Nick_Workcloseup-167x174.jpg",
@@ -98,7 +100,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JX0jlHRCfidafee23yS" : {
+    "simplelogin:11" : {
       "date" : 1410926056676,
       "firstname" : "Randy",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/09/RT-Pix-Copy-167x174.jpg",
@@ -108,7 +110,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JjKCVrvCueODJp6iT2Z" : {
+    "simplelogin:12" : {
       "date" : 1425211264533,
       "firstname" : "Josh",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2014/08/Josh-167x174.jpg",
@@ -118,7 +120,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JjOvSU4JolOhtLHZDZV" : {
+    "simplelogin:13" : {
       "date" : 1425290418140,
       "firstname" : "Wes",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2012/09/WesGabbard-Team.jpg",
@@ -128,7 +130,7 @@
       "yahoo" : "yahooIM",
       "upcoming" : "PTO / WFH / OOO "
     },
-    "-JjQGcktQW63LY_hjpTi" : {
+    "simplelogin:14" : {
       "date" : 1425313008811,
       "firstname" : "Will",
       "image" : "http://www.charitydynamics.com/wp-content/uploads/2013/10/Will_Work_feature-167x174.jpg",
