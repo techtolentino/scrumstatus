@@ -38,7 +38,7 @@ h1, p {
 	margin: 0 auto;
 }
 
-.login, .register {
+.login, .register, .sorry {
 	width: 440px;
 	max-width: 90%;
 	margin: 0 auto;
@@ -50,6 +50,10 @@ h1, p {
 	border: thin solid #195DE9;
 	border-radius: 3px;
 	box-shadow: 4px 4px 10px #CDCDCD;
+}
+
+.sorry p {
+	font-size: 1.1em;
 }
 
 .dripicon a:hover {
@@ -411,7 +415,7 @@ ______________________________*/
 	padding-top: 20px;
 }
 
-.register h1, .login h1{
+.register h1, .login h1, .sorry h1{
 	font-size: 2em;
 	margin-bottom: 5px;
 	margin-top: 0;

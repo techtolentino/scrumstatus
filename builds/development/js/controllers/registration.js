@@ -4,7 +4,7 @@ myApp.controller('RegistrationController',
   $scope.login = function() {
     Authentication.login($scope.user)
       .then(function(user) {
-      $location.path('/meetings');
+      $location.path('/team');
     }, function(error) {
       $scope.message = error.toString();
     });
@@ -14,7 +14,7 @@ myApp.controller('RegistrationController',
     Authentication.register($scope.user)
       .then(function(user) {
       Authentication.login($scope.user);
-      $location.path('/meetings');
+      $location.path('/team');
     }, function(error) {
       $scope.message = error.toString();
     });

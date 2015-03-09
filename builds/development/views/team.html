@@ -1,6 +1,11 @@
 <div class="sorry"
 	ng-hide="signedIn()">
-	<p>Sorry, only registered users can access the team.</p>
+	<h1>Yikes!</h1>
+	<p>You must register or login to view the team page!</p>
+	<button type="submit" class="btn"
+	ng-disabled="myform.$invalid">Sign Up</button>
+	<a type="submit" class="altbtn"
+	ng-href="#/login">Login</a>
 </div>
 
 <div ng-show="signedIn()">
