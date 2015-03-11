@@ -83,6 +83,7 @@
 			<textarea 
 				name="projectDescription" 
 				id="memberproject" 
+				ng-disabled="!isCurrentUser()"
 				ng-model="projectDescription"
 				ng-change="dashProjectUpdate(projectDescription)"
 				placeholder="{{member.projectDescription}}">{{member.projectDescription}}
@@ -91,6 +92,3 @@
 	</form>
 	<p><a class="btn dashsubmit" ng-href="#/team">Go Back</a></p>
 </div>
-
-{{}}
-
