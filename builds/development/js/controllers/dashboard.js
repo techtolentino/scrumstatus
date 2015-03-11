@@ -7,8 +7,9 @@ myApp.controller('DashboardController',
 
 	$scope.member = member.$asObject();
 
+	var currentUser = $rootScope.currentUser;
 	$scope.isCurrentUser = function() {
-	  return $rootScope.currentUser.email == member;
+	  return currentUser.$id == $scope.member.$id;
 	};
 
 	$scope.colorChange = function() {

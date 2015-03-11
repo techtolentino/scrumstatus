@@ -8,12 +8,13 @@
 
 	<form name="dashColorForm"
 		id="dashColorForm"
+		ng-if="ifCurrentUser()"
 		novalidate>
 		<div class="radio-toolbar">
 			<input 
 				type="radio" 
 				id="radio1" 
-				name="radios" 
+				name="radios"
 				ng-model="color" 
 				ng-change="colorChange(color)"
 				value="green">
@@ -22,7 +23,7 @@
 		  <input 
 		  	type="radio" 
 		  	id="radio2" 
-		  	name="radios" 
+		  	name="radios"
 		  	ng-model="color" 
 		  	ng-change="colorChange(color)"
 		  	value="grellow">
@@ -31,7 +32,7 @@
 		  <input 
 		  	type="radio" 
 		  	id="radio3" 
-		  	name="radios" 
+		  	name="radios"
 		  	ng-model="color" 
 		  	ng-change="colorChange(color)"
 		  	value="yellow">
@@ -40,7 +41,7 @@
 		  <input 
 		  	type="radio" 
 		  	id="radio4" 
-		  	name="radios" 
+		  	name="radios"
 		  	ng-model="color" 
 		  	ng-change="colorChange(color)"
 		  	value="orange">
@@ -49,7 +50,7 @@
 		  <input 
 		  	type="radio" 
 		  	id="radio5" 
-		  	name="radios" 
+		  	name="radios"
 		  	ng-model="color" 
 		  	ng-change="colorChange(color)"
 		  	value="red">
@@ -58,7 +59,7 @@
 		  <input 
 		  	type="radio" 
 		  	id="radio6" 
-		  	name="radios" 
+		  	name="radios"
 		  	ng-model="color" 
 		  	ng-change="colorChange(color)"
 		  	value="darkred">
@@ -67,7 +68,7 @@
 		  <input 
 		  	type="radio" 
 		  	id="radio7" 
-		  	name="radios" 
+		  	name="radios"
 		  	ng-model="color" 
 		  	ng-change="colorChange(color)"
 		  	value="unavailable">
@@ -78,6 +79,7 @@
 
 	<form name="dashProjectForm"
 		id="projectForm"
+		ng-if="ifCurrentUser()"
 		novalidate>
 		<div class="dashprojects">
 			<textarea 
@@ -89,5 +91,9 @@
 			</textarea>
 		</div>
 	</form>
+	<div>
+		<h1>{{member.firstname}}'s current status: {{member.color}}</h1>
+		<p>{{member.projectDescription}}</p>
+	</div>
 	<p><a class="btn dashsubmit" ng-href="#/team">Go Back</a></p>
 </div>
