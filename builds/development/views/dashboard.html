@@ -83,7 +83,6 @@
 			<textarea 
 				name="projectDescription" 
 				id="memberproject" 
-				ng-disabled="!isCurrentUser()"
 				ng-model="projectDescription"
 				ng-change="dashProjectUpdate(projectDescription)"
 				placeholder="{{member.projectDescription}}">{{member.projectDescription}}
