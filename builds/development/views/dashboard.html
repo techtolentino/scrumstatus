@@ -8,7 +8,7 @@
 
 	<form name="dashColorForm"
 		id="dashColorForm"
-		ng-if="ifCurrentUser()"
+		ng-if="isCurrentUser()"
 		novalidate>
 		<div class="radio-toolbar">
 			<input 
@@ -79,7 +79,7 @@
 
 	<form name="dashProjectForm"
 		id="projectForm"
-		ng-if="ifCurrentUser()"
+		ng-if="isCurrentUser()"
 		novalidate>
 		<div class="dashprojects">
 			<textarea 
