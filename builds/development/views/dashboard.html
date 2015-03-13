@@ -14,7 +14,13 @@
 		</div>
 		<div class="note-box">
 			<h3>Additional notes</h3>
-			<p>For your information:</p>
+			<input 
+				type="text" 
+				id="updateUpcoming" 
+				name="upcoming"
+				placeholder="{{member.upcoming}}"
+				ng-model="upcoming" 
+				ng-change="upcomingChange(upcoming)">
 		</div>
 	</div>
 
