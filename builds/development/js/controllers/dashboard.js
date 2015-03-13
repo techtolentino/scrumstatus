@@ -1,11 +1,13 @@
 myApp.controller('DashboardController', 
-	function($scope, $firebase, $rootScope, Authentication, $routeParams, $location, FIREBASE_URL){
+	function($scope, $firebase, $rootScope, $window, Authentication, $routeParams, $location, FIREBASE_URL){
 
 	var whichMember = $routeParams.uId;
 	var ref = new Firebase(FIREBASE_URL + 'users/'  + whichMember);
 	var member = $firebase(ref);
 
 	$scope.member = member.$asObject();
+
+
 
 	$scope.colorChange = function() {
 		var updateObj = $firebase(ref);
