@@ -29,5 +29,17 @@ myApp.controller('DashboardController',
 		updateObj.$update(updateProject);
 	}
 
+	$scope.emailUpdate = function() {
+		var updateObj = $firebase(ref);
+
+		var updateProject = {
+			date: Firebase.ServerValue.TIMESTAMP,
+      email : $scope.email
+		};
+
+		updateObj.$update(updateProject);
+	}
+
+
 
 });
