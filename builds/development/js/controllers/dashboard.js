@@ -1,5 +1,5 @@
 myApp.controller('DashboardController', 
-	function($scope, $firebase, $rootScope, $routeParams, $location, FIREBASE_URL){
+	function($scope, $firebase, $rootScope, Authentication, $routeParams, $location, FIREBASE_URL){
 
 	var whichMember = $routeParams.uId;
 	var ref = new Firebase(FIREBASE_URL + 'users/'  + whichMember);
@@ -7,10 +7,13 @@ myApp.controller('DashboardController',
 
 	$scope.member = member.$asObject();
 
-	var currentUser = $rootScope.user;
-	$scope.isCurrentUser = function() {
-	  return currentUser.email == member.email;
-	};
+	console.log($rootScope.currentUser.$id);
+	// console.log($scope.member);
+
+
+	// $scope.isCurrentUser = function() {
+	//   return $rootScope.currentUser.$id == $scope.member.$id;
+	// };
 
 	$scope.colorChange = function() {
 		var updateObj = $firebase(ref);

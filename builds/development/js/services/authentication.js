@@ -19,6 +19,7 @@ myApp.factory('Authentication', function($firebase,
         email: user.email,
         password: user.password
       });
+
     }, //login
 
     register : function(user) {
