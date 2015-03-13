@@ -7,14 +7,6 @@ myApp.controller('DashboardController',
 
 	$scope.member = member.$asObject();
 
-	console.log($rootScope.currentUser.$id);
-	// console.log($scope.member);
-
-
-	// $scope.isCurrentUser = function() {
-	//   return $rootScope.currentUser.$id == $scope.member.$id;
-	// };
-
 	$scope.colorChange = function() {
 		var updateObj = $firebase(ref);
 

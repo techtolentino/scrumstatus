@@ -6,9 +6,19 @@
 		<img ng-src="{{member.image}}" id="frame-{{member.color}}">
 	</div>
 
+	<div class="update-section"  id="frame-{{member.color}}">
+		<div class="status-box">
+			<h3>Current status: {{member.color}}</h3>
+			<p><strong>Working on:</strong> {{member.projectDescription}}</p>
+		</div>
+		<div class="note-box">
+			<h3>Additional notes</h3>
+			<p>For your information:</p>
+		</div>
+	</div>
+
 	<form name="dashColorForm"
 		id="dashColorForm"
-		ng-if="isCurrentUser()"
 		novalidate>
 		<div class="radio-toolbar">
 			<input 
@@ -79,7 +89,6 @@
 
 	<form name="dashProjectForm"
 		id="projectForm"
-		ng-if="isCurrentUser()"
 		novalidate>
 		<div class="dashprojects">
 			<textarea 
@@ -91,9 +100,5 @@
 			</textarea>
 		</div>
 	</form>
-	<div>
-		<h1>{{member.firstname}}'s current status: {{member.color}}</h1>
-		<p>{{member.projectDescription}}</p>
-	</div>
 	<p><a class="btn dashsubmit" ng-href="#/team">Go Back</a></p>
 </div>

@@ -318,9 +318,9 @@ ______________________________*/
 	margin: 0 auto;
 	margin-top: 5%;
 	overflow: hidden;
-	/*padding: 5px 10px 45px 10px;*/
 	text-align: center;
 	border-radius: 3px;
+	background-size: 100% 100%;
 }
 
 .dashicon {
@@ -328,6 +328,27 @@ ______________________________*/
 	font-size: 1.3em;
 	color: #2062E6;
 	margin-right: 10px;
+}
+
+.update-section {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.status-box {
+	width: 49%;
+  max-width: 300px;
+  display: inline-block;
+  margin: 0 auto;
+  border: none !important;
+}
+
+.note-box {
+	width: 49%;
+  max-width: 300px;
+  display: inline-block;
+  margin: 0 auto;
+  border: none !important;
 }
 
 #frame-green {
