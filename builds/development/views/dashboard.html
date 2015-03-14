@@ -1,4 +1,3 @@
-{{currentUser.firstname}} - - {{member.firstname}}
 <div class="edit" id="frame-{{member.color}}">
 	<div id="title-{{member.color}}" class="dashTitle">
 		{{member.firstname}}
@@ -102,7 +101,7 @@
 		<div class="dashprojects">
 			<textarea 
 				name="projectDescription" 
-				id="memberproject" 
+				id="memberproject"
 				ng-model="projectDescription"
 				ng-change="dashProjectUpdate(projectDescription)"
 				placeholder="{{member.projectDescription}}">{{member.projectDescription}}

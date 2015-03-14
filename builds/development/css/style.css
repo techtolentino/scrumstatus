@@ -52,6 +52,16 @@ h1, p {
 	box-shadow: 4px 4px 10px #CDCDCD;
 }
 
+.welcome {
+	margin-top: 5%;
+}
+
+.welcome h1 {
+	font-size: 5em;
+	color: #195DE9;
+	margin-bottom: 30px;
+}
+
 .sorry p {
 	font-size: 1.1em;
 }
@@ -95,17 +105,32 @@ button:focus {
 	outline-width: 0;
 }
 
+.view {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background: #FFF;
+	border: 1px solid #24E8DF;
+	color: #24E8DF;
+	padding: 15px 40px 15px 40px;
+	font-size: 1.2em;
+}
+
+.view:focus {
+	outline-width: 0;
+}
+
 .btn {
 	border: 1px solid #195DE9;
 	background-color: #195DE9;
 	color: #ffffff;
-	font-size: 1.2em;
+	font-size: 15px 40px 15px 40px;
 }
 
 .btn:hover {
-	background-color: #2277e9;
+	background-color: #2380FF;
 	border-bottom: 1px solid transparent;
 	cursor: pointer;
+	color: #ffffff;
 }
 
 .altbtn {
@@ -345,6 +370,11 @@ ______________________________*/
   border: none !important;
 }
 
+.status-box p {
+	color: #3B3B3B;
+	font-size: 14.3px
+}
+
 .note-box {
 	width: 49%;
   max-width: 300px;
@@ -539,6 +569,7 @@ textarea#memberproject {
 	padding: 10px;
 	display: block;
 	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0)
 }
 
 textarea#memberproject:focus {
@@ -562,7 +593,7 @@ textarea#memberproject:focus {
   margin: 5px;
   border-radius: 50%;
   font-size: 12px;
-  color: #000;
+  color: #3B3B3B;
   opacity: .8;
   border: 1px solid rgba(109, 109, 109, 0.71);
 }
@@ -698,8 +729,8 @@ ______________________________*/
 	display: inline-block;
 	padding: 5px 7px 5px 7px;
 	margin: auto 2px;
-	color: #000;
-	border: 1px solid #000;
+	color: #3B3B3B;
+	border: 1px solid #3B3B3B;
 	border-radius: 4px;
 	font-size: .7em;
 }
