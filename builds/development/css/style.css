@@ -333,12 +333,14 @@ ______________________________*/
 .update-section {
 	width: 100%;
 	margin-top: 30px;
+	border-left: none !important;
+  border-right: none !important;
+  padding-bottom: 10px;
 }
 
 .status-box {
 	width: 49%;
   max-width: 300px;
-  display: inline-block;
   margin: 0 auto;
   border: none !important;
 }
@@ -346,7 +348,6 @@ ______________________________*/
 .note-box {
 	width: 49%;
   max-width: 300px;
-  display: inline-block;
   margin: 0 auto;
   border: none !important;
 }
@@ -429,11 +430,13 @@ ______________________________*/
 
 .dashTitle {
 	width: 100%;
-	height: 40px;
-	color: #ffffff;
-	margin: 0 auto;
-	display: block;
-	padding-top: 20px;
+  height: 70px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  display: block;
+  font-size: 5em;
+  overflow: hidden;
+  text-align: right;
 }
 
 .register h1, .login h1, .sorry h1{
@@ -497,9 +500,9 @@ ______________________________*/
 
 .userInfo {
 	float: right;
-	margin-right: 15px !important;
-	font-size: 12px !important;
-	color: #646464 !important;
+  font-size: 12px !important;
+  color: #646464 !important;
+  padding: 2px 10px 2px 10px;
 }
 
 #updateUpcoming {
@@ -782,20 +785,24 @@ ______________________________*/
 
 @media all and (max-width: 476px) {
 	.cbp-rfgrid li {
-    width: calc(100% / 3.5);
+    width: 100%;
 	  margin: 0 auto;
 	  float: left;
-	  margin: 3px;
-	  margin-left: 7px;
+	  /*margin: 3px;*/
+	  margin-bottom: 5px;
+	  border-radius: 0;
 	}
 	.dashImageHome img {
 		border-radius: 50%;
-	  width: 50px;
-	  margin-top: 15px;
+	  width: 58px;
+	  margin-bottom: 15px !important;
+	  float: left;
+	  opacity: 1 !important;
+	  margin-left: 10px;
 	}
 	.cbp-rfgrid li h3 {
 	  width: 100%;
-	  height: 40px;
+	  height: 34px;
 	  color: #FFF;
 	  margin-top: 5px;
 	  font-size: 1.2em;
@@ -808,13 +815,6 @@ ______________________________*/
 }
 
 @media all and (max-width: 321px) {
-	.cbp-rfgrid li {
-    width: calc(100% / 3.5);
-	  margin: 0 auto;
-	  float: left;
-	  margin: 3px;
-	  margin-left: 7px;
-	}
 	.dashImageHome img {
 		border-radius: 50%;
 	  width: 50px;

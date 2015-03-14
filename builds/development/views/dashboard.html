@@ -1,7 +1,9 @@
+{{currentUser.firstname}} - - {{member.firstname}}
 <div class="edit" id="frame-{{member.color}}">
 	<div id="title-{{member.color}}" class="dashTitle">
-	<p class="userInfo">{{member.email}} | {{member.yahoo}}</p>
+		{{member.firstname}}
 	</div>
+		<p class="userInfo">{{member.email}} | {{member.yahoo}}</p>
 	
 	<div class="dashimage">
 		<img ng-src="{{member.image}}" id="frame-{{member.color}}">
