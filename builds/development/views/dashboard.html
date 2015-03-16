@@ -1,8 +1,8 @@
 <div class="edit" id="frame-{{member.color}}">
 	<div id="title-{{member.color}}" class="dashTitle">
-		{{member.firstname}}
+		{{member.firstname}}<span style="font-size:20px">&nbsp;</span>
 	</div>
-		<p class="userInfo">{{member.email}} | {{member.yahoo}}</p>
+		<p class="userInfo"><a href="mailto:{{member.email}}">{{member.email}}</a> <!-- | {{member.yahoo}}</p> -->
 	
 	<div class="dashimage">
 		<img ng-src="{{member.image}}" id="frame-{{member.color}}">
@@ -10,8 +10,9 @@
 
 	<div class="update-section"  id="frame-{{member.color}}">
 		<div class="status-box">
-			<h3>Current status: {{member.color}}</h3>
-			<p><strong>Working on:</strong> {{member.projectDescription}}</p>
+			<h3>{{member.firstname}} is {{member.color}}</h3>
+			<p>Working on: {{member.projectDescription}}</p>
+			<br>
 		</div>
 		<div class="note-box">
 			<h3>Additional notes</h3>

@@ -167,8 +167,8 @@ button:focus {
 	padding: 5px;
 }
 
-a {text-decoration: none; color: #24E8DF;}
-a:hover {color: #c71f43;}
+a {text-decoration: none; color: #c71f43;}
+a:hover {color: #727272;}
 .error {
 	color: #135643;
 	font-size: 14px;
@@ -341,7 +341,7 @@ ______________________________*/
 	border: thin solid transparent;
 	display: block;
 	margin: 0 auto;
-	margin-top: 5%;
+	margin-top: 3%;
 	overflow: hidden;
 	text-align: center;
 	border-radius: 3px;
@@ -357,7 +357,7 @@ ______________________________*/
 
 .update-section {
 	width: 100%;
-	margin-top: 30px;
+	margin-top: -49px;
 	border-left: none !important;
   border-right: none !important;
   padding-bottom: 10px;
@@ -368,6 +368,8 @@ ______________________________*/
   max-width: 300px;
   margin: 0 auto;
   border: none !important;
+  margin-top: 50px;
+
 }
 
 .status-box p {
@@ -530,9 +532,9 @@ ______________________________*/
 
 .userInfo {
 	float: right;
-  font-size: 12px !important;
+  font-size: 10px !important;
   color: #646464 !important;
-  padding: 2px 10px 2px 10px;
+  padding: 0 5px 2px 10px;
 }
 
 #updateUpcoming {
@@ -541,8 +543,11 @@ ______________________________*/
   border-bottom: none;
   text-align: center;
   font-size: 1.1em;
-  padding: 0;
+  padding: 10px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.48);
   margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.26);
 }
 
 .dashsubmit {
