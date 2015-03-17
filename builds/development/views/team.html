@@ -2,10 +2,11 @@
 	ng-hide="signedIn()">
 	<h1>Yikes!</h1>
 	<p>You must register or login to view the team page!</p>
-	<button class="btn"
-	ng-href="#/register">Sign Up</button>
+	<a class="btn"
+		ng-href="#/register"
+		id="signup-button">Sign Up</a>
 	<a type="submit" class="altbtn"
-	ng-href="#/login">Login</a>
+		ng-href="#/login">Login</a>
 </div>
 
 <div ng-show="signedIn()">

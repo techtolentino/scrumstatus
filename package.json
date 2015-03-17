@@ -1,7 +1,7 @@
 {
   "name": "ScrumStat",
   "version": "0.0.1",
-  "description": "A Simple Scrum App, inspired by Mateo Clarke",
+  "description": "#ScrumStatus App, inspired by Mateo Clarke",
   "repository": {
     "type": "git",
     "url": "https://github.com/techtolentino/scrumstatus.git"
