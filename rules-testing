@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "users": {
+        ".read": true,
+    "$uid": {
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    }
+  }
+}
+
+
+
+
+
+{
+  "rules": {
+    "users": {
+        ".read": true,
+        ".write": true
+    },
+	    "$uid": {
+	    	"color": {
+	    		".read": true,
+					".write": "auth != null && auth.uid == $uid"
+			}
+		}
+  }
+}
