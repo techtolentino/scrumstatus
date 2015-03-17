@@ -1,5 +1,5 @@
 myApp.factory('Authentication', function($firebase, 
-  $firebaseSimpleLogin, $window, FIREBASE_URL, $rootScope, $location) {
+  $firebaseSimpleLogin, FIREBASE_URL, $rootScope, $location) {
 
   var ref = new Firebase(FIREBASE_URL);
   var simpleLogin = $firebaseSimpleLogin(ref);

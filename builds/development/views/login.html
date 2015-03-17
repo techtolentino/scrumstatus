@@ -1,5 +1,23 @@
-<section class="welcome">
-	<h1>#ScrumStatus</h1>
-	<a class="btn view" href="#/team">View Team</a>
-	<a class="altbtn" href="#/register">Add Someone</a>
+<section class="login">
+	<form name="myform" 
+		ng-submit="login()"
+		novalidate>
+		<h1>Hello!</h1>
+		<p>Please log-in</p>
+
+		<input type="email" name="email" placeholder="Email" autofocus
+			ng-model="user.email" ng-required="true">
+		
+		<p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">(Must be a valid email)</p>
+
+		<input type="password" name="password" placeholder="Password"
+			ng-model="user.password" ng-required="true">
+		<p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Password is required</p>
+		
+		<p class="error" ng-show="message">{{message}}</p>
+
+		<button type="submit" class="btn"
+			ng-disabled="myform.$invalid">Login</button>
+		<a class="altbtn" href="#/register">Register</a>
+	</form>
 </section>
