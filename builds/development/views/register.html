@@ -3,13 +3,13 @@
 		ng-submit="register()"
 		>
 		<h1>Add Yourself</h1>
+
 		<p>It's easy to get started</p>
 
 		<input 
 			type="firstname" 
 			name="firstname" 
-			placeholder="* First Name" 
-			autofocus
+			placeholder="* First Name"
 			ng-model="user.firstname" 
 			ng-required="true">
 		<p class="error validationerror" ng-show="myform.firstname.$invalid && myform.firstname.$touched">First name is required</p>
