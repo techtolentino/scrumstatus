@@ -133,6 +133,11 @@ button:focus {
 	color: #ffffff;
 }
 
+#signup-button {
+	font-size: 1.2em;
+	padding: 15px 60px 15px 60px;
+}
+
 .altbtn {
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -345,6 +350,7 @@ ______________________________*/
 	overflow: hidden;
 	text-align: center;
 	border-radius: 3px;
+	/*background: url(../images/bg.jpg);*/
 	background-size: 100% 100%;
 }
 

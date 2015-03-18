@@ -5,23 +5,38 @@
 		<h1>Add Yourself</h1>
 		<p>It's easy to get started</p>
 
-		<input type="firstname" name="firstname" placeholder="* First Name" autofocus
-			ng-model="user.firstname" ng-required="true">
+		<input 
+			type="firstname" 
+			name="firstname" 
+			placeholder="* First Name" 
+			autofocus
+			ng-model="user.firstname" 
+			ng-required="true">
 		<p class="error validationerror" ng-show="myform.firstname.$invalid && myform.firstname.$touched">First name is required</p>
 
-		<input type="email" name="email" placeholder="* Email" autofocus
-			ng-model="user.email" ng-required="true">
+		<input 
+			type="email" 
+			name="email" 
+			placeholder="* Email"
+			ng-model="user.email"
+			ng-required="true">
 		<p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">Please use a valid email</p>
 
-		<input type="password" name="password" placeholder="* Password"
-			ng-model="user.password" ng-required="true">
+		<input 
+			type="password"
+			name="password"
+			placeholder="* Password"
+			ng-model="user.password"
+			ng-required="true">
+
 		<p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Please enter a password</p>
 
 		<p class="error" ng-show="message">{{message}}</p>
 
-		<button type="submit" class="btn"
+		<button
+			type="submit"
+			class="btn"
 			ng-disabled="myform.$invalid">Sign Up</button>
-		<a type="submit" class="altbtn"
-			ng-href="#/login">Login</a>
+		<a type="submit" class="altbtn" ng-href="#/login">Login</a>
 	</form>
 </section>
