@@ -1,4 +1,4 @@
-<!-- <div class="sorry"
+<div class="sorry"
 	ng-hide="signedIn()">
 	<h1>Yikes!</h1>
 	<p>You must register or login to view the team page!</p>
@@ -6,9 +6,9 @@
 	ng-href="#/register">Sign Up</button>
 	<a type="submit" class="altbtn"
 	ng-href="#/login">Login</a>
-</div> -->
+</div>
 
-<!-- <div ng-show="signedIn()"> -->
+<div ng-show="signedIn()">
 	<ul class="cbp-rfgrid" ng-repeat="(key,member) in members">
 		<a ng-href="#/views/dashboard/{{key}}/{{member.firstname}}">
 			<li class="{{member.color}}">
@@ -21,4 +21,4 @@
 			</li>
 		</a>
 	</ul>
-<!-- </div> -->
+</div>
