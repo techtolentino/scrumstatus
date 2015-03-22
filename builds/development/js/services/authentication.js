@@ -34,7 +34,7 @@ myApp.factory('Authentication', function($firebase,
           firstname: user.firstname,
           email: user.email,
 		      image : "http://telehealth.org/wp-content/images/user-placeholder.jpg",
-		      color : "unavailable",
+		      color : "green",
 		      projectDescription : "Currently working on...",
 		      yahoo : "yahooIM",
 		      upcoming : "PTO / WFH / OOO"
