@@ -118,7 +118,7 @@ button:focus {
 	background: #FFF;
 	border: 1px solid #24E8DF;
 	color: #24E8DF;
-	padding: 15px 40px 15px 40px;
+	padding: 15px 40px 16px 40px;
 	font-size: 1.2em;
 }
 
@@ -834,12 +834,16 @@ ______________________________*/
 }
 
 @media all and (max-width: 476px) {
+	.welcome h1 {
+		font-size: 3em;
+		margin-top: 90px;
+	}
 	.cbp-rfgrid li {
     width: 100%;
 	  margin: 0 auto;
 	  float: left;
 	  /*margin: 3px;*/
-	  margin-bottom: 5px;
+	  margin-bottom: 20px;
 	  border-radius: 0;
 	}
 	.dashImageHome img {
@@ -870,7 +874,6 @@ ______________________________*/
 	  width: 50px;
 	  margin-top: 15px;
 	}
-
 	.dashimage img {
 		width: 65px;
 	}
@@ -891,5 +894,12 @@ ______________________________*/
 	}
 	textarea#memberproject {
     font-size: 1em;
+	}
+	.altbtn {
+		width: 135px;
+		padding: 15px 0 14px 0;
+	}
+	.view {
+		padding: 15px 28px 15px 28px;
 	}
 }
