@@ -687,7 +687,7 @@ ______________________________*/
 	width: calc(100% / 7);
 	text-align: center;
 	margin: 10px;
-	padding: 20px 0 0 0;
+	padding: 10px 0 0 0;
 	border-radius: 2px;
 	box-shadow: 4px 4px 4px #CDCDCD;
 }
@@ -788,12 +788,12 @@ ______________________________*/
 
 .cbp-rfgrid li h3 {
   width: 100%;
-  height: 40px;
+  height: 25px;
   color: #FFF;
   text-shadow: 1px 1px 1px #000;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 1.8em;
-  padding-top: 20px;
+  padding-top: 5px;
   text-align: center;
   letter-spacing: 2px;
   margin-bottom: 0;
