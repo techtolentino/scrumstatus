@@ -2,7 +2,7 @@ var myApp = angular.module('myApp',
 	['ngRoute', 'firebase', 'appControllers'])
 .constant('FIREBASE_URL', 'https://scrumcheck.firebaseio.com/');
 
-// Dependencies
+// Setting Firebase Dependency
 var appControllers = angular.module('appControllers',['firebase']);
 
 myApp.config(['$routeProvider', function($routeProvider){
