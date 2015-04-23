@@ -100,12 +100,12 @@
 		id="projectForm"
 		novalidate>
 		<div class="dashprojects">
+			<h3>Current Projects</h3>
 			<textarea 
 				name="projectDescription" 
 				id="memberproject"
 				ng-model="projectDescription"
-				ng-change="dashProjectUpdate(projectDescription)"
-				placeholder="{{member.projectDescription}}">{{member.projectDescription}}
+				ng-change="dashProjectUpdate(projectDescription)">{{member.projectDescription}}
 			</textarea>
 		</div>
 	</form>

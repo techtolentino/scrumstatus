@@ -46,4 +46,8 @@ myApp.controller('DashboardController',
 		updateObj.$update(updateUpcoming);
 	}
 
+	$scope.$watch('member.projectDescription', function(newValue){
+		$scope.projectDescription = newValue;
+	});
+
 });
