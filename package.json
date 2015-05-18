@@ -1,12 +1,12 @@
 {
-  "name": "ScrumStat",
+  "name": "CharityDynamics Services Scrum",
   "version": "0.0.1",
-  "description": "#ScrumStatus App, inspired by Mateo Clarke",
+  "description": "CD Services Scrum App",
   "repository": {
     "type": "git",
     "url": "https://github.com/techtolentino/scrumstatus.git"
   },
-  "author": "@makertolentino",
+  "author": "@charitydynamics",
   "devDependencies": {
     "gulp": "^3.8.8",
     "gulp-util": "^2.2.20",

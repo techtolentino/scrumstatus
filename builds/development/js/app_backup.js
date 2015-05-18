@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', 
 	['ngRoute', 'firebase', 'appControllers', 'ngDialog'])
-.constant('FIREBASE_URL', 'https://scrumcheck.firebaseio.com/');
+.constant('FIREBASE_URL', 'https://cdservices.firebaseio.com/');
 
 // Dependencies
 var appControllers = angular.module('appControllers',['firebase']);

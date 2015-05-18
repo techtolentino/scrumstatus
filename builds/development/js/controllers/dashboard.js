@@ -13,6 +13,7 @@ myApp.controller('DashboardController',
 	  return $rootScope.currentUser.$id == member.id;
 	};
 
+
 	$scope.colorChange = function() {
 		var updateObj = $firebase(ref);
 
